@@ -11,7 +11,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Aedile-IC/aedile">
-    <img src="./src/assets/logo.png" alt="Logo"  height="80">
+    <img src="./assets/1500x500.jpeg" alt="Logo"  height="80">
   </a>
 
   <!-- <h3 align="center">KanbanIC</h3> -->
@@ -76,7 +76,7 @@ A simple way to manage your daily tasks and projects. Collaborate easily and sec
 * [Dfinity](https://dfinity.org/)
 
 <!-- GETTING STARTED -->
-## Getting Started
+<!-- ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
@@ -137,13 +137,15 @@ See the [open issues](https://github.com/Aedile-IC/aedile/issues) for a list of 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+The application repository is private for the moment, it will be made public when the beta is open.
+
+<!-- Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+5. Open a Pull Request -->
 
 
 
