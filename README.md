@@ -150,10 +150,10 @@ The application repository is private for the moment, it will be made public whe
 
 
 <!-- LICENSE -->
-## License
+<!-- ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
+ -->
 
 
 <!-- CONTACT -->
