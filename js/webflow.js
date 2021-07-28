@@ -3030,10 +3030,11 @@ Webflow.define('scroll', module.exports = function ($) {
 
     updateHistory(hash, evt);
     window.setTimeout(function () {
-      scroll($el);
-      setFocusable($el, 'add');
-      $el.focus();
-      setFocusable($el, 'remove');
+      scroll($el, function setFocus() {
+        setFocusable($el, 'add');
+        $el.focus();
+        setFocusable($el, 'remove');
+      });
     }, evt ? 0 : 300);
   }
 
@@ -3051,7 +3052,7 @@ Webflow.define('scroll', module.exports = function ($) {
     }
   }
 
-  function scroll($targetEl) {
+  function scroll($targetEl, cb) {
     var start = $win.scrollTop();
     var end = calculateScrollEndPosition($targetEl);
     if (start === end) return;
@@ -3064,6 +3065,8 @@ Webflow.define('scroll', module.exports = function ($) {
 
       if (elapsed <= duration) {
         animate(step);
+      } else if (typeof cb === 'function') {
+        cb();
       }
     };
 
