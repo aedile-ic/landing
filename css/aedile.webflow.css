@@ -2279,6 +2279,7 @@ figcaption {
 }
 
 .process-tab-button {
+  overflow: visible;
   width: 115px;
   height: 115px;
   margin-right: 15px;
@@ -2843,6 +2844,7 @@ figcaption {
   color: #fff;
   text-align: center;
   background-clip: border-box;
+  -webkit-text-fill-color: inherit;
 }
 
 .intro-block-overlay:hover {
@@ -7931,6 +7933,7 @@ html.w-mod-js *[data-ix="hide-lightbox"] {
     background-position: 50% 50%;
     background-size: cover;
     background-clip: border-box;
+    -webkit-text-fill-color: inherit;
   }
 
   .image-section-overlay.dark {

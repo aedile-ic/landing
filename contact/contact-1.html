@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Tue Jul 27 2021 08:37:04 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Wed Mar 23 2022 09:40:41 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="60b101a7ddde8b30e6ce01c0" data-wf-site="60b101a7ddde8b50b8ce011c">
 <head>
   <meta charset="utf-8">
@@ -20,7 +20,7 @@
   <link href="../images/webclip.png" rel="apple-touch-icon">
 </head>
 <body>
-  <div data-collapse="medium" data-animation="default" data-duration="400" data-no-scroll="1" role="banner" class="navbar w-nav">
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-no-scroll="1" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
     <div class="w-container">
       <a href="../index.html" class="link-block-2 w-inline-block"><img src="../images/logo-aedile.svg" width="182" alt="Aedile logo" class="image-2"></a>
     </div>
@@ -39,9 +39,9 @@
   <div class="subpage-header contact-1 wf-section">
     <div class="container w-container">
       <div data-ix="fade-in-on-load-2" class="white-contact-form w-form">
-        <form id="wf-form-Email-Form-2" name="wf-form-Email-Form-1" data-name="Email Form 1">
+        <form id="wf-form-Email-Form-2" name="wf-form-Email-Form-1" data-name="Email Form 1" method="get">
           <h1 class="form-title">Contact us now</h1>
-          <h2 class="form-title subtitle">Do you have a question? Contact us now!</h2><label for="name-2" class="field-label">Name:</label><input type="text" id="name-2" name="name" data-name="Name 2" maxlength="256" class="field rounded w-input"><label for="Email-3" class="field-label">Email address:</label><input type="email" id="Email-3" name="Email" data-name="Email" maxlength="256" required="" class="field rounded w-input"><label for="Message" class="field-label">Your message:</label><textarea id="Message" name="Message" maxlength="5000" data-name="Message" class="field rounded area w-input"></textarea><input type="submit" value="Send Email" data-wait="Please wait..." class="button w-button">
+          <h2 class="form-title subtitle">Do you have a question? Contact us now!</h2><label for="name-2" class="field-label">Name:</label><input type="text" class="field rounded w-input" maxlength="256" name="name" data-name="Name 2" placeholder="" id="name-2"><label for="Email-3" class="field-label">Email address:</label><input type="email" class="field rounded w-input" maxlength="256" name="Email" data-name="Email" placeholder="" id="Email-3" required=""><label for="Message" class="field-label">Your message:</label><textarea id="Message" name="Message" maxlength="5000" data-name="Message" placeholder="" class="field rounded area w-input"></textarea><input type="submit" value="Send Email" data-wait="Please wait..." class="button w-button">
         </form>
         <div class="success-message w-form-done">
           <p>Thank you! Your submission has been received!</p>
@@ -102,9 +102,9 @@
           <div class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
         </div>
         <div class="contact-form w-form">
-          <form id="wf-form-Personal-Contact-Form" name="wf-form-Personal-Contact-Form" data-name="Personal Contact Form">
+          <form id="wf-form-Personal-Contact-Form" name="wf-form-Personal-Contact-Form" data-name="Personal Contact Form" method="get">
             <div class="w-row">
-              <div class="w-col w-col-6"><input type="text" id="Email-2" name="Email-2" data-name="Email 2" placeholder="Enter your email address" maxlength="256" required="" class="field email w-input"></div>
+              <div class="w-col w-col-6"><input type="text" class="field email w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="Enter your email address" id="Email-2" required=""></div>
               <div class="w-col w-col-6"><input type="submit" value="Send Email" data-wait="Please wait..." class="button submit-newsletter w-button"></div>
             </div>
           </form>
