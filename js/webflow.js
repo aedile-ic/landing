@@ -115,7 +115,7 @@ var $win = $(window);
 var $doc = $(document);
 var isFunction = $.isFunction;
 
-var _ = Webflow._ = __webpack_require__(9);
+var _ = Webflow._ = __webpack_require__(10);
 
 var tram = Webflow.tram = __webpack_require__(5) && $.tram;
 var domready = false;
@@ -1487,18 +1487,19 @@ window.tram = function (a) {
 
 __webpack_require__(7);
 __webpack_require__(8);
-__webpack_require__(10);
+__webpack_require__(9);
 __webpack_require__(11);
 __webpack_require__(12);
-__webpack_require__(2);
 __webpack_require__(13);
+__webpack_require__(2);
 __webpack_require__(14);
 __webpack_require__(15);
 __webpack_require__(16);
 __webpack_require__(17);
 __webpack_require__(18);
-__webpack_require__(23);
-module.exports = __webpack_require__(24);
+__webpack_require__(19);
+__webpack_require__(24);
+module.exports = __webpack_require__(25);
 
 
 /***/ }),
@@ -1720,6 +1721,99 @@ var _typeof2 = _interopRequireDefault(__webpack_require__(4));
 "use strict";
  // @wf-will-never-add-flow-to-this-file
 
+/*
+  global
+  window, document, $, Webflow
+*/
+
+(function () {
+  // if the page is being rendered on the server, don't continue
+  if (typeof window === 'undefined') return;
+
+  function setAllBackgroundVideoStates(shouldPlay) {
+    if (Webflow.env('design')) {
+      return;
+    } // 1. set every video
+
+
+    $('video').each(function () {
+      shouldPlay && $(this).prop('autoplay') ? this.play() : this.pause();
+    }); // 2. set every video controller button
+
+    $('.w-background-video--control').each(function () {
+      if (shouldPlay) {
+        showPauseButton($(this));
+      } else {
+        showPlayButton($(this));
+      }
+    });
+  }
+
+  function showPlayButton($btn) {
+    $btn.find('> span').each(function (i) {
+      $(this).prop('hidden', function () {
+        return i === 0;
+      });
+    });
+  }
+
+  function showPauseButton($btn) {
+    $btn.find('> span').each(function (i) {
+      $(this).prop('hidden', function () {
+        return i === 1;
+      });
+    });
+  }
+
+  $(document).ready(function () {
+    var watcher = window.matchMedia('(prefers-reduced-motion: reduce)'); // respond to changing preferences
+
+    watcher.addEventListener('change', function (e) {
+      setAllBackgroundVideoStates(!e.matches);
+    });
+
+    if (watcher.matches) {
+      // user currently prefers reduced motion, pause all immediately
+      setAllBackgroundVideoStates(false);
+    } // show play button for videos without autoplay
+
+
+    $('video:not([autoplay])').each(function () {
+      $(this).parent().find('.w-background-video--control').each(function () {
+        showPlayButton($(this));
+      });
+    });
+    $(document).on('click', '.w-background-video--control', function (e) {
+      if (Webflow.env('design')) return;
+      var btn = $(e.currentTarget);
+      var video = $("video#".concat(btn.attr('aria-controls'))).get(0);
+      if (!video) return;
+
+      if (video.paused) {
+        var play = video.play();
+        showPauseButton(btn); // IE does not return a promise from .play()
+
+        if (play && typeof play["catch"] === 'function') {
+          play["catch"](function () {
+            // something went wrong and it's not playing
+            showPlayButton(btn);
+          });
+        }
+      } else {
+        video.pause();
+        showPlayButton(btn);
+      }
+    });
+  });
+})();
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+ // @wf-will-never-add-flow-to-this-file
+
 /* globals document, window, navigator */
 
 /* eslint-disable no-var */
@@ -1805,7 +1899,7 @@ Webflow.define('brand', module.exports = function ($) {
 });
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2180,7 +2274,7 @@ module.exports = function () {
 /* eslint-enable */
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2467,7 +2561,7 @@ Webflow.define('focus-visible', module.exports = function () {
 });
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2575,7 +2669,7 @@ Webflow.define('focus-within', module.exports = function () {
 });
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2683,7 +2777,7 @@ Webflow.define('focus', module.exports = function () {
 });
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3264,7 +3358,7 @@ Webflow.define('ix', module.exports = function ($, _) {
 });
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3394,7 +3488,7 @@ Webflow.define('links', module.exports = function ($, _) {
 });
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3649,7 +3743,7 @@ Webflow.define('scroll', module.exports = function ($) {
 });
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3790,7 +3884,7 @@ Webflow.define('touch', module.exports = function ($) {
 });
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4315,7 +4409,7 @@ Webflow.define('dropdown', module.exports = function ($, _) {
 });
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4337,7 +4431,7 @@ Webflow.define('dropdown', module.exports = function ($, _) {
 
 var _interopRequireDefault = __webpack_require__(1);
 
-var _slicedToArray2 = _interopRequireDefault(__webpack_require__(19));
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(20));
 
 var Webflow = __webpack_require__(0);
 
@@ -4746,14 +4840,17 @@ Webflow.define('forms', module.exports = function ($, _) {
     // The file upload Input is not stylable by the designer, so we are
     // going to pretend the Label is the input. ¯\_(ツ)_/¯
 
-    $label.on('click keydown', function (e) {
-      if (e.type === 'keydown' && e.which !== 13 && e.which !== 32) {
-        return;
-      }
+    if (!inApp) {
+      $label.on('click keydown', function (e) {
+        if (e.type === 'keydown' && e.which !== 13 && e.which !== 32) {
+          return;
+        }
 
-      e.preventDefault();
-      $input.click();
-    }); // Both of these are added through CSS
+        e.preventDefault();
+        $input.click();
+      });
+    } // Both of these are added through CSS
+
 
     $label.find('.w-icon-file-upload-icon').attr('aria-hidden', 'true');
     $removeEl.find('.w-icon-file-upload-remove').attr('aria-hidden', 'true');
@@ -4919,14 +5016,14 @@ Webflow.define('forms', module.exports = function ($, _) {
 });
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayWithHoles = __webpack_require__(20);
+var arrayWithHoles = __webpack_require__(21);
 
-var iterableToArrayLimit = __webpack_require__(21);
+var iterableToArrayLimit = __webpack_require__(22);
 
-var nonIterableRest = __webpack_require__(22);
+var nonIterableRest = __webpack_require__(23);
 
 function _slicedToArray(arr, i) {
   return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || nonIterableRest();
@@ -4935,7 +5032,7 @@ function _slicedToArray(arr, i) {
 module.exports = _slicedToArray;
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports) {
 
 function _arrayWithHoles(arr) {
@@ -4945,7 +5042,7 @@ function _arrayWithHoles(arr) {
 module.exports = _arrayWithHoles;
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports) {
 
 function _iterableToArrayLimit(arr, i) {
@@ -4977,7 +5074,7 @@ function _iterableToArrayLimit(arr, i) {
 module.exports = _iterableToArrayLimit;
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports) {
 
 function _nonIterableRest() {
@@ -4987,7 +5084,7 @@ function _nonIterableRest() {
 module.exports = _nonIterableRest;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5586,7 +5683,7 @@ Webflow.define('navbar', module.exports = function ($, _) {
 });
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
