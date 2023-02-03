@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'components/styles-btn';
+@import 'components/styles-text';
+@import 'components/styles-input';
+
+html {
+  font-size: 1vw;
+  scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
