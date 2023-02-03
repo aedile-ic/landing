@@ -1,2 +1,32 @@
 @import '../variables';
 
+a {
+  padding: 12rem 15rem;
+  color: $primary;
+  font-size: 16rem;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 600;
+  transition: all $timeTransitionShort;
+
+  &:hover {
+    background: $gradient1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.btn {
+  padding: 12rem 15rem;
+  background: $primary;
+  color: $neutral6;
+  display: flex;
+  gap: 13rem;
+  border-radius: 16px;
+  width: fit-content;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 600;
+
+  .icon {
+    margin-right: 4rem;
+  }
+}

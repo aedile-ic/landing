@@ -5,7 +5,7 @@
 @import 'components/styles-input';
 
 html {
-  font-size: 1vw;
+  font-size: 0.0694445vw;
   scroll-behavior: smooth;
   font-family: poppins, serif;
 }
@@ -21,6 +21,9 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-size: 16rem;
+  line-height: 16rem;
+  background-color: #18172d;
 }
 
 a {
