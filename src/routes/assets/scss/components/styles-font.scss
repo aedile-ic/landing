@@ -1,0 +1,55 @@
+@import '../variables';
+
+
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/chakraPetch/ChakraPetch-RegularItalic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/chakraPetch/ChakraPetch-BoldItalic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/chakraPetch/ChakraPetch-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/chakraPetch/ChakraPetch-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: poppins;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: poppins;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: poppins;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Poppins-Regular.ttf);
+}
