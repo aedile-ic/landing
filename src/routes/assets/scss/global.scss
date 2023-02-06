@@ -22,8 +22,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16rem;
-  line-height: 16rem;
-  background-color: #18172d;
+  line-height: 18rem;
+  background-color: $neutral6;
 }
 
 a {
@@ -32,4 +32,14 @@ a {
 
 .hide {
   display: none;
+}
+
+.container {
+  width: 1200rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+section {
+  position: relative;
 }

@@ -1,28 +1,28 @@
 <nav id="nav">
     <div class="logo">
-        <a href="#nav">
+        <a href="#">
             <img src="/images/header/logo-header.svg" alt="Logo aedile" class="logo-header">
         </a>
     </div>
     <div class="ancors">
-        <a href="#features">
+        <a class="link" href="#features">
             Features
-        </a >
-        <a href="#concept">
+        </a>
+        <a class="link" href="#concept">
             Concept
         </a>
-        <a href="#roadmap">
+        <a class="link" href="#roadmap">
             Roadmap
         </a>
-        <a href="#community">
+        <a class="link" href="#community">
             Community
         </a>
     </div>
     <div class="try">
-        <div class="btn primary">
+        <a class="btn" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" target="_blank">
             Try the beta
-            <img src="/images/header/try-beta-icon.svg" alt="Try beta" class="icon"/>
-        </div>
+            <img alt="Try beta" class="icon" src="/images/arrow-try-beta-icon.svg"/>
+        </a>
     </div>
 </nav>
 
@@ -37,6 +37,9 @@
     padding-left: 50rem;
     padding-right: 50rem;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 
     > div {
       flex: 1;
