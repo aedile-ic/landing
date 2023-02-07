@@ -1,5 +1,5 @@
 <script>
-    import LogoToRight from '../../lib/anim/logoToRight.svelte';
+    import LogoToRight from '../anim/LogoToRight.svelte';
 </script>
 
 <section>
@@ -39,17 +39,16 @@
 
   .bg-build-and-fund {
     position: absolute;
-    z-index: 3;
     right: 0;
     top: 0;
-    width: 1620.38rem;
+    width: 1440rem;
   }
 
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
   }
 
   .bloc-build-and-fund {

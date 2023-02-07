@@ -8,6 +8,7 @@ html {
   font-size: 0.0694445vw;
   scroll-behavior: smooth;
   font-family: poppins, serif;
+  overflow-x: hidden;
 }
 
 *,
@@ -24,6 +25,7 @@ body {
   font-size: 16rem;
   line-height: 18rem;
   background-color: $neutral6;
+  overflow-x: hidden;
 }
 
 a {
@@ -32,6 +34,14 @@ a {
 
 .hide {
   display: none;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
 }
 
 .container {
