@@ -143,8 +143,8 @@
 
     p {
       margin-top: 16rem;
-      font-size: 16px;
-      line-height: 18px;
+      font-size: 16rem;
+      line-height: 18rem;
       color: $neutral3;
     }
   }
