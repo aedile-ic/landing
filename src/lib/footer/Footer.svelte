@@ -44,15 +44,15 @@
     gap: 16.80rem;
   }
 
-  .twitter {
+  .twitter .icon {
     width: 16rem;
   }
 
-  .discord {
+  .discord .icon {
     width: 15rem;
   }
 
-  .github {
+  .github .icon {
     width: 14.55rem;
   }
 </style>

@@ -1,4 +1,4 @@
-<section>
+<section id="community">
     <img src="/images/home/bg-contact.svg" class="bg-contact" alt="Background contact"/>
     <img src="/images/home/bg-contact-line.svg" class="bg-contact-line" alt="Background contact line"/>
 
