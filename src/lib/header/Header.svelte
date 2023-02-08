@@ -1,7 +1,7 @@
 <nav id="nav">
     <div class="logo">
         <a href="#">
-            <img src="/images/header/logo-header.svg" alt="Logo aedile" class="logo-header">
+            <img src="/images/logo-text.svg" alt="Logo aedile" class="logo-header">
         </a>
     </div>
     <div class="ancors">

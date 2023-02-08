@@ -28,6 +28,7 @@
   cursor: pointer;
   border: 3rem solid transparent;
   padding: 9rem 12rem;
+  align-items: center;
 
   &:hover {
     background: $primaryLight;
@@ -59,7 +60,7 @@
 
   .icon {
     margin-right: 4rem;
-    margin-left: 12rem;
+    margin-left: 4rem;
     width: 16rem;
   }
 

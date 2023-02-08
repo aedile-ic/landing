@@ -5,6 +5,7 @@
     import TransparentAndSecure from '../lib/home/TransparentAndSecure.svelte';
     import Roadmap from '../lib/home/Roadmap.svelte';
     import TransparencyAndWork from '../lib/home/TransparencyAndWork.svelte';
+    import Contact from '../lib/home/Contact.svelte';
 </script>
 
 <BuildAndFund/>
@@ -13,3 +14,4 @@
 <TransparentAndSecure/>
 <Roadmap/>
 <TransparencyAndWork/>
+<Contact/>

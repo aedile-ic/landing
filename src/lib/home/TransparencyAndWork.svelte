@@ -75,7 +75,7 @@
 
   .btn-gradient {
     width: fit-content;
-    margin: 72rem auto 0;
+    margin: 48rem auto 0;
     padding: 16rem;
     font-weight: 600;
   }
