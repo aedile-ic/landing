@@ -1,0 +1,17 @@
+@import '../variables';
+
+.badge {
+  border-radius: 100px;
+  order: 0;
+  flex-grow: 0;
+  padding: 8px 16px;
+  width: fit-content;
+
+  &.available {
+    background: $gradient1;
+  }
+
+  &.soon {
+    background: $infoLight;
+  }
+}

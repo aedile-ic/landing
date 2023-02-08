@@ -60,7 +60,6 @@
             </div>
         </div>
         <a href="#" class="btn-gradient" data-text="Learn more">
-
             <img src="/images/arrow.svg"  class="icon" alt="Arrow Learn more">
         </a>
     </div>
@@ -161,7 +160,7 @@
       p {
         font-size: 16rem;
         line-height: 18rem;
-        color: #AAA6D7;
+        color: $neutral3;
       }
     }
   }
