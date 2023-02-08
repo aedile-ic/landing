@@ -40,6 +40,7 @@
     position: fixed;
     width: 100%;
     z-index: 10;
+    background: $neutral6;
 
     > div {
       flex: 1;

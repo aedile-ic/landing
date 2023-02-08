@@ -40,7 +40,7 @@
   @import '../../routes/assets/scss/global';
 
   section {
-    margin-top: 267rem;
+    margin-top: 47rem;
   }
 
   h2 {
@@ -80,6 +80,7 @@
     position: absolute;
     right: 0;
     top: 165rem;
+    width: 784rem;
   }
 
 </style>

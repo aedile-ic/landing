@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 90vh;
+    height: 781rem;
   }
 
   .bloc-build-and-fund {

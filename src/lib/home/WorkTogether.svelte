@@ -2,7 +2,7 @@
     import Carrousel from '../anim/Carrousel.svelte';
 </script>
 
-<section>
+<section id="features">
     <img src="/images/home/bg-work-together.svg" class="bg-work-together" alt="background work together">
 
     <div class="container">

@@ -32,34 +32,42 @@
     }
 </script>
 
-<div class="carrousel">
-    <div class="elts" id="elts">
-        {#each datas as data, i}
-            <div class="elt {i === currentPageElt ? 'current-elt' : ''}">
-                <img src="{data.src}" alt="{data.alt}"/>
-            </div>
-        {/each}
-    </div>
+<div class="bloc-carrousel">
+    <div class="carrousel">
+        <div class="elts" id="elts">
+            {#each datas as data, i}
+                <div class="elt {i === currentPageElt ? 'current-elt' : ''}">
+                    <img src="{data.src}" alt="{data.alt}"/>
+                </div>
+            {/each}
+        </div>
 
-    <div class="pagination">
-        {#each datas as _, i}
+        <div class="pagination">
+            {#each datas as _, i}
             <span class="pagination-item {currentPage === i ? 'current-page' : ''}"
                   on:click={() => handleClick(i)}></span>
-        {/each}
-    </div>
+            {/each}
+        </div>
 
-    <div class="info">
-        {#each datas as data, i}
-            <div class="anim-info {currentPageElt !== i ? 'hidden' : 'show'}">
-                <h3>{data.title}</h3>
-                <p>{data.description}</p>
-            </div>
-        {/each}
+        <div class="info">
+            {#each datas as data, i}
+                <div class="anim-info {currentPageElt !== i ? 'hidden' : 'show'}">
+                    <h3>{data.title}</h3>
+                    <p>{data.description}</p>
+                </div>
+            {/each}
+        </div>
     </div>
 </div>
 
 <style lang="scss">
   @import '../../routes/assets/scss/global';
+
+  .bloc-carrousel {
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 220rem;
+  }
 
   .carrousel {
     margin: 0 auto;
