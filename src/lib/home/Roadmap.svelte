@@ -10,7 +10,7 @@
             <div class="step">
                 <div class="number">
                     <p>Step 1</p>
-                    <h4>Q1 2023</h4>
+                    <h3>Q1 2023</h3>
                 </div>
                 <div class="objectifs">
                     <p>Team ramp up</p>
@@ -23,7 +23,7 @@
             <div class="step">
                 <div class="number">
                     <p>Step 2</p>
-                    <h4>Q2 2023</h4>
+                    <h3>Q2 2023</h3>
                 </div>
                 <div class="objectifs">
                     <p>Personal dashboards</p>
@@ -36,7 +36,7 @@
             <div class="step">
                 <div class="number">
                     <p>Step 3</p>
-                    <h4>Q3 2023</h4>
+                    <h3>Q3 2023</h3>
                 </div>
                 <div class="objectifs">
                     <p>Private dashboards</p>
@@ -48,7 +48,7 @@
             <div class="step">
                 <div class="number">
                     <p>Step 4<p>
-                    <h4>Q4 2023</h4>
+                    <h3>Q4 2023</h3>
                 </div>
                 <div class="objectifs">
                     <p>Beta release of the first features</p>
@@ -100,7 +100,7 @@
   }
 
   .number {
-    h4 {
+    h3 {
       font-family: 'Chakra Petch', sans-serif;
       font-size: 40rem;
       line-height: 44rem;

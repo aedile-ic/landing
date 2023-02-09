@@ -11,18 +11,18 @@
             <p>Aedile is an open and decentralized service offering an alternative to your favorite management tools for
                 individuals, teams and communities. </p>
             <div class="social-media">
-                <a class="btn try" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" target="_blank">
+                <a class="btn try" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" target="_blank" rel="noopener noreferrer">
                     Try the beta
                     <img alt="Try beta" class="icon" src="/images/arrow-try-beta-icon.svg"/>
                 </a>
                 <a class="btn-gradient secondary discord" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login"
-                   target="_blank">
+                   target="_blank" rel="noopener noreferrer">
                     <img alt="Try beta" class="icon" src="/images/discord.svg"/>
                 </a>
-                <a class="btn-gradient secondary twitter" href="https://twitter.com/aedile_ic" target="_blank">
+                <a class="btn-gradient secondary twitter" href="https://twitter.com/aedile_ic" target="_blank" rel="noopener noreferrer">
                     <img alt="Try beta" class="icon" src="/images/twitter.svg"/>
                 </a>
-                <a class="btn-gradient secondary github" href="https://github.com/aedile-ic" target="_blank">
+                <a class="btn-gradient secondary github" href="https://github.com/aedile-ic" target="_blank" rel="noopener noreferrer">
                     <img alt="Try beta" class="icon" src="/images/github.svg"/>
                 </a>
             </div>

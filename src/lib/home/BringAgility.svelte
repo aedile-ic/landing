@@ -6,25 +6,25 @@
 
         <div class="infos">
             <div class="info">
-                <h4>
+                <h3>
                     Decentralised collaboration
-                </h4>
+                </h3>
                 <p>
                     Any changes you make on your Kanban board
                 </p>
             </div>
             <div class="info">
-                <h4>
+                <h3>
                     Reward accomplished tasks
-                </h4>
+                </h3>
                 <p>
                     Make it easy for your team to focus on tasks
                 </p>
             </div>
             <div class="info">
-                <h4>
+                <h3>
                     Raise funds from investors
-                </h4>
+                </h3>
                 <p>
                     Aedile's intuitive features give any team the ability
                 </p>
@@ -61,7 +61,7 @@
     gap: 16rem;
   }
 
-  h4 {
+  h3 {
     font-family: 'Chakra Petch', sans-serif;
     font-style: normal;
     font-weight: 700;

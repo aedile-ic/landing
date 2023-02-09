@@ -1,3 +1,39 @@
+<script>
+    import {onMount} from "svelte";
+
+    onMount(() => {
+        let prevScrollpos = document.documentElement.scrollTop || document.body.scrollTop;
+        let navbar;
+
+        navbar = document.getElementById("nav");
+
+        addBgNav(prevScrollpos);
+
+        function addBgNav(currentScrollPos) {
+            if (currentScrollPos < 30) {
+                navbar.style.background = '';
+            } else {
+                navbar.style.background = '#19172F';
+            }
+        }
+
+        document.onscroll = () => {
+            let currentScrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+            addBgNav(currentScrollPos);
+
+            if (prevScrollpos - 50 > currentScrollPos) {
+                navbar.style.transform = "translateY(0%)";
+                prevScrollpos = currentScrollPos;
+            }
+            if (prevScrollpos + 50 < currentScrollPos) {
+                navbar.style.transform = "translateY(-100%)";
+                prevScrollpos = currentScrollPos;
+            }
+        };
+    });
+
+</script>
+
 <nav id="nav">
     <div class="logo">
         <a href="#">
@@ -19,7 +55,7 @@
         </a>
     </div>
     <div class="try">
-        <a class="btn" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" target="_blank">
+        <a class="btn" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" target="_blank" rel="noopener noreferrer">
             Try the beta
             <img alt="Try beta" class="icon" src="/images/arrow-try-beta-icon.svg"/>
         </a>
@@ -40,7 +76,7 @@
     position: fixed;
     width: 100%;
     z-index: 10;
-    background: $neutral6;
+    transition: transform 0.3s ease-in;
 
     > div {
       flex: 1;

@@ -2,7 +2,7 @@
     <img src="/images/home/bg-star.png" class="bg-star" alt="background star">
     <img src="/images/home/bg-star-2.png" class="bg-star2" alt="background star">
     <div class="info"  id="concept">
-        <img src="/images/home/aedile-charater.png" class="aedile-character" alt="Aedile charater">
+        <img src="/images/home/aedile-charater.svg" class="aedile-character" alt="Aedile charater">
         <h3>Transparent and Secure, Built on the Internet Computer</h3>
         <p>Our solution is built with DFINITY's Internet of the Future. A new technology stack that is tamper-proof,
             fast, scales to billions of users around the world, and supports a new kind of autonomous software.</p>
@@ -11,7 +11,7 @@
         <div class="row">
             <div class="column">
                 <img src="/images/home/group-1.png" alt="Group 1"/>
-                <h5>For Builders</h5>
+                <h4>For Builders</h4>
                 <p>
                     The Internet Computer is a completely novel public blockchain that can run at web speed and scale
                     without bounds.
@@ -19,7 +19,7 @@
             </div>
             <div class="column">
                 <img src="/images/home/group-2.png" alt="Group 2"/>
-                <h5>Tokenize Everything</h5>
+                <h4>Tokenize Everything</h4>
                 <p>
                     The Internet Computer is the world’s first blockchain where web experiences can be built with smart
                     contracts (canisters) served directly to end users in a browser.
@@ -27,7 +27,7 @@
             </div>
             <div class="column">
                 <img src="/images/home/group-3.png" alt="Group 3"/>
-                <h5>Decentralization</h5>
+                <h4>Decentralization</h4>
                 <p>
                     Why build decentralized software just to run your front end on monopolistic private platforms,
                     proprietary cloud hosting and database services?
@@ -37,7 +37,7 @@
         <div class="row">
             <div class="column">
                 <img src="/images/home/group-4.png" alt="Group 4"/>
-                <h5>Power of the Open Web</h5>
+                <h4>Power of the Open Web</h4>
                 <p>
                     Any service built on the Internet Computer can share functionality and data with others with the
                     permission of the creator.
@@ -45,7 +45,7 @@
             </div>
             <div class="column">
                 <img src="/images/home/group-5.png" alt="Group 5"/>
-                <h5>Exciting New Paradigm</h5>
+                <h4>Exciting New Paradigm</h4>
                 <p>
                     The radical rethinking baked into the Internet Computer means much of the typical complexity of
                     software architecture melts away.
@@ -53,7 +53,7 @@
             </div>
             <div class="column">
                 <img src="/images/home/group-6.png" alt="Group 6"/>
-                <h5>Motoko</h5>
+                <h4>Motoko</h4>
                 <p>
                     The Motoko language is optimized for authoring for the Internet Computer.
                 </p>
@@ -146,7 +146,7 @@
         margin: 0 auto 16rem;
       }
 
-      h5 {
+      h4 {
         margin-bottom: 16rem;
         background: linear-gradient(90deg, #F296D2 0%, #FFB483 100%);
         -webkit-background-clip: text;

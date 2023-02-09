@@ -4,15 +4,15 @@
     <div class="social-media">
         <a class="discord"
            href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login"
-           target="_blank">
+           target="_blank" rel="noopener noreferrer">
             <img alt="Try beta" class="icon" src="/images/discord.svg"/>
         </a>
-        <a class="twitter"href="https://twitter.com/aedile_ic"
-           target="_blank">
+        <a class="twitter" href="https://twitter.com/aedile_ic"
+           target="_blank" rel="noopener noreferrer">
             <img alt="Try beta" class="icon" src="/images/twitter.svg"/>
         </a>
         <a class="github" href="https://github.com/aedile-ic"
-           target="_blank">
+           target="_blank" rel="noopener noreferrer">
             <img alt="Try beta" class="icon" src="/images/github.svg"/>
         </a>
     </div>

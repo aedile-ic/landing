@@ -12,15 +12,15 @@
                 <div class="social-media">
                     <a class="btn-gradient secondary discord" data-text="Discord"
                        href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login"
-                       target="_blank">
+                       target="_blank" rel="noopener noreferrer">
                         <img alt="Try beta" class="icon" src="/images/discord.svg"/>
                     </a>
                     <a class="btn-gradient secondary twitter" data-text="Twitter" href="https://twitter.com/aedile_ic"
-                       target="_blank">
+                       target="_blank" rel="noopener noreferrer">
                         <img alt="Try beta" class="icon" src="/images/twitter.svg"/>
                     </a>
                     <a class="btn-gradient secondary github" data-text="Github" href="https://github.com/aedile-ic"
-                       target="_blank">
+                       target="_blank" rel="noopener noreferrer">
                         <img alt="Try beta" class="icon" src="/images/github.svg"/>
                     </a>
                 </div>
@@ -31,7 +31,7 @@
         <h4>Contact us</h4>
         <p>Aedile is the 1st open service offering individuals, teams and communities a decentralized alternative to
             their favorite management tools. Bring agility and a DAO twist to the way you manage your projects !</p>
-        <a class="btn" href="#" target="_blank">
+        <a class="btn" href="#" target="_blank" rel="noopener noreferrer">
             Contact
             <img alt="icon contact" class="icon" src="/images/home/icon-contact.svg"/>
         </a>
