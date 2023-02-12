@@ -1,5 +1,9 @@
 <section id="community">
-    <img src="/images/home/bg-contact.svg" class="bg-contact" alt="Background contact"/>
+    <svg class="bg-contact" viewBox="0 0 1440 1412" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="bg-contact" d="M0 0L1440 447V1412H0L0 0Z" fill="#141327"/>
+    </svg>
+
+<!--    <img src="/images/home/bg-contact.svg"  alt="Background contact"/>-->
     <img src="/images/home/bg-contact-line.svg" class="bg-contact-line" alt="Background contact line"/>
 
     <div class="container join">
@@ -10,11 +14,11 @@
             <div class="info">
                 <h3>Join the Ædile community now!</h3>
                 <div class="social-media">
-                    <a class="btn-gradient secondary discord" data-text="Discord"
-                       href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login"
-                       target="_blank" rel="noopener noreferrer">
-                        <img alt="Try beta" class="icon" src="/images/discord.svg"/>
-                    </a>
+<!--                    <a class="btn-gradient secondary discord" data-text="Discord"-->
+<!--                       href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login"-->
+<!--                       target="_blank" rel="noopener noreferrer">-->
+<!--                        <img alt="Try beta" class="icon" src="/images/discord.svg"/>-->
+<!--                    </a>-->
                     <a class="btn-gradient secondary twitter" data-text="Twitter" href="https://twitter.com/aedile_ic"
                        target="_blank" rel="noopener noreferrer">
                         <img alt="Try beta" class="icon" src="/images/twitter.svg"/>
@@ -31,7 +35,7 @@
         <h4>Contact us</h4>
         <p>Aedile is the 1st open service offering individuals, teams and communities a decentralized alternative to
             their favorite management tools. Bring agility and a DAO twist to the way you manage your projects !</p>
-        <a class="btn" href="#" target="_blank" rel="noopener noreferrer">
+        <a class="btn" href="mailto:aedile@esensconsulting.com" target="_blank" rel="noopener noreferrer">
             Contact
             <img alt="icon contact" class="icon" src="/images/home/icon-contact.svg"/>
         </a>

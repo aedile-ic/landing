@@ -2,18 +2,53 @@
     import {onMount} from 'svelte';
 
     let datas = [];
+    let startX;
+    let currentX;
+    let touchStartX;
+    let touchCurrentX;
+    let currentPageElt = 0;
+    let currentPage = 0;
 
     async function fetchData() {
         const response = await fetch('carrousel.json');
         datas = await response.json();
     }
 
-    let currentPageElt = 0;
-    let currentPage = 0;
-
     onMount(async () => {
         await fetchData();
+        let section = document.getElementById("carrousel");
+
+        section.addEventListener("mousedown", (event) => startX = event.pageX);
+
+        section.addEventListener("mouseup", (event) => {
+            currentX = event.pageX;
+            handleNavigation();
+        });
+
+        section.addEventListener("touchstart", (event) => touchStartX = event.touches[0].clientX);
+
+        section.addEventListener("touchend", function (event) {
+            touchCurrentX = event.changedTouches[0].clientX;
+            handleNavigation();
+        });
     });
+
+    function handleNavigation() {
+        if (startX || touchStartX) {
+            if (((currentX - 200) > startX || (touchCurrentX - 100) > touchStartX) && currentPage > 0) {
+                handleClick(currentPage - 1)
+            }
+
+            if (((currentX + 200) < startX || (touchCurrentX + 100) < touchStartX) && currentPage < datas.length - 1) {
+                handleClick(currentPage + 1)
+            }
+
+            startX = null;
+            currentX = null;
+            touchStartX = null;
+            touchCurrentX = null;
+        }
+    }
 
     function handleClick(page) {
         if (page === currentPage) {
@@ -32,11 +67,11 @@
     }
 </script>
 
-<div class="bloc-carrousel">
+<div class="bloc-carrousel" id="carrousel">
     <div class="carrousel">
         <div class="elts" id="elts">
             {#each datas as data, i}
-                <div class="elt {i === currentPageElt ? 'current-elt' : ''}">
+                <div class="elt {i === currentPageElt ? 'current-elt' : ''}" on:click={() => handleClick(i)}>
                     <img src="{data.src}" alt="{data.alt}"/>
                 </div>
             {/each}
@@ -93,6 +128,20 @@
   }
 
   .elt {
+    position: relative;
+    user-select: none;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+
+
     img {
       width: 804rem;
       padding: 4rem;

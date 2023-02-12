@@ -2,11 +2,11 @@
     <img src="/images/logo-text.svg" class="logo" alt="Logo">
     <p>AEDILE/ESENS (C) 2023</p>
     <div class="social-media">
-        <a class="discord"
-           href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login"
-           target="_blank" rel="noopener noreferrer">
-            <img alt="Try beta" class="icon" src="/images/discord.svg"/>
-        </a>
+<!--        <a class="discord"-->
+<!--           href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login"-->
+<!--           target="_blank" rel="noopener noreferrer">-->
+<!--            <img alt="Try beta" class="icon" src="/images/discord.svg"/>-->
+<!--        </a>-->
         <a class="twitter" href="https://twitter.com/aedile_ic"
            target="_blank" rel="noopener noreferrer">
             <img alt="Try beta" class="icon" src="/images/twitter.svg"/>
@@ -48,9 +48,9 @@
     width: 16rem;
   }
 
-  .discord .icon {
-    width: 15rem;
-  }
+  //.discord .icon {
+  //  width: 15rem;
+  //}
 
   .github .icon {
     width: 14.55rem;

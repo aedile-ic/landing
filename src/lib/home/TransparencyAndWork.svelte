@@ -3,6 +3,14 @@
     <p>Aedile's main goal is to become a hub for developers and entrepreneurs to meet, share and collaborate around
         Internet Computer projects and any other innovative ideas ! Our primary objective is to build a tool to gather
         the community and facilitate funding.</p>
+
+    <p class="our-vision">
+        As a developer, you will be able to earn cryptos while bringing your expertise to the IC ecosystem.<br/>
+        As an entrepreneur, you will have access to a wide community of passionate IC builders.<br/>
+        As an investor, you will have the opportunity to discover a large variety of brand new open services and many other cool projects.
+        <br/><br/>
+        As a part of the Aedile network you will empower a fast growing community and benefit from a network, thus forming a tidal wave of exciting new opportunities !
+    </p>
     <div class="container">
         <div class="card">
             <div class="badge available">
@@ -24,9 +32,8 @@
         </div>
     </div>
 
-    <a href="#" class="btn-gradient" data-text="Our vision">
-        <img src="/images/arrow.svg" class="icon" alt="Our vision more">
-    </a>
+
+
 </section>
 
 
@@ -73,13 +80,6 @@
     gap: 16rem;
   }
 
-  .btn-gradient {
-    width: fit-content;
-    margin: 48rem auto 0;
-    padding: 16rem;
-    font-weight: 600;
-  }
-
   h4 {
     font-family: 'Chakra Petch', sans-serif;
     font-weight: 700;
@@ -88,6 +88,10 @@
     text-transform: uppercase;
     color: $neutral3;
     text-align: left;
+  }
+
+  .our-vision {
+    max-width: 785rem;
   }
 
 </style>

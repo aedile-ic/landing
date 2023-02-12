@@ -15,10 +15,10 @@
                     Try the beta
                     <img alt="Try beta" class="icon" src="/images/arrow-try-beta-icon.svg"/>
                 </a>
-                <a class="btn-gradient secondary discord" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login"
-                   target="_blank" rel="noopener noreferrer">
-                    <img alt="Try beta" class="icon" src="/images/discord.svg"/>
-                </a>
+<!--                <a class="btn-gradient secondary discord" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login"-->
+<!--                   target="_blank" rel="noopener noreferrer">-->
+<!--                    <img alt="Try beta" class="icon" src="/images/discord.svg"/>-->
+<!--                </a>-->
                 <a class="btn-gradient secondary twitter" href="https://twitter.com/aedile_ic" target="_blank" rel="noopener noreferrer">
                     <img alt="Try beta" class="icon" src="/images/twitter.svg"/>
                 </a>
@@ -78,9 +78,9 @@
     width: 11.51rem;
   }
 
-  .discord img {
-    width: 18rem;
-  }
+  //.discord img {
+  //  width: 18rem;
+  //}
 
   .twitter img {
     width: 20.06rem;

@@ -59,7 +59,7 @@
                 </p>
             </div>
         </div>
-        <a href="#" class="btn-gradient" data-text="Learn more">
+        <a href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" class="btn-gradient" data-text="Try the beta" target="_blank">
             <img src="/images/arrow.svg"  class="icon" alt="Arrow Learn more">
         </a>
     </div>
