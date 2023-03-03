@@ -1,0 +1,20 @@
+[
+  {
+    "src": "/images/carrousel/carrousel-1.png",
+    "alt": "First picture carrousel",
+    "title": "Cards",
+    "description": "Organize your workflows and fund your projects."
+  },
+  {
+    "src": "/images/carrousel/carrousel-2.png",
+    "alt": "Second picture carrousel",
+    "title": "Cards",
+    "description": "Organize your workflows and fund your projects."
+  },
+  {
+    "src": "/images/carrousel/carrousel-3.png",
+    "alt": "third picture carrousel",
+    "title": "Cards",
+    "description": "Organize your workflows and fund your projects. Organize your workflows and fund your projects. Organize your workflows and fund your projects. Organize your workflows and fund your projects."
+  }
+]
