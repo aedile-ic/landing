@@ -11,10 +11,14 @@ h1, h2, h3 {
   line-height: 52rem;
   font-family: 'Chakra Petch', sans-serif;
   font-weight: 700;
+
+  @media (max-width: $tabletMax) {
+    font-size: 32rem;
+    line-height: 36rem;
+  }
 }
 
 p {
   font-size: 16rem;
   font-weight: 400;
-
 }

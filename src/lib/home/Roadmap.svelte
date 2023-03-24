@@ -1,8 +1,8 @@
 <section id="roadmap">
     <div class="container">
         <div class="info">
-            <h2>Roadmap 2023</h2>
-            <p>Follow our next steps and evolutions of the project</p>
+            <h2>Roadmap</h2>
+            <p>Follow our next steps !</p>
         </div>
 
         <img src="/images/home/bg-roadmap.png" class="bg-roadmap" alt="Background roadmap">
@@ -29,7 +29,6 @@
                     <p>Personal dashboards</p>
                     <p>Dynamic workflows</p>
                     <p>Task management</p>
-                    <p>And other cool features!</p>
                 </div>
             </div>
             <div class="divider"></div>
@@ -41,7 +40,6 @@
                 <div class="objectifs">
                     <p>Private dashboards</p>
                     <p>Task assignments</p>
-                    <p>And more!</p>
                 </div>
             </div>
             <div class="divider"></div>
@@ -67,11 +65,26 @@
 
   section {
     margin-top: 215rem;
+
+    @media (max-width: $tabletMax) {
+      margin-top: 120rem;
+    }
   }
 
   .container {
     display: flex;
     justify-content: space-between;
+
+
+    @media (max-width: $tabletMax) {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: $tabletMax) {
+    .info {
+      margin-bottom: 32rem;
+    }
   }
 
   h2 {
@@ -79,6 +92,11 @@
     line-height: 52rem;
     color: $neutral2;
     margin-bottom: 16rem;
+
+    @media (max-width: $tabletMax) {
+      font-size: 32rem;
+      line-height: 36rem;
+    }
   }
 
   p {
@@ -92,11 +110,21 @@
 
     box-shadow: 0 91px 330px rgba(255, 138, 214, 0.07), 0 42.0721px 152.569px rgba(255, 138, 214, 0.0519173), 0 24.0727px 87.2965px rgba(255, 138, 214, 0.0438747), 0px 14.6119px 52.9883px rgba(255, 138, 214, 0.0377964), 0px 8.80434px 31.9278px rgba(255, 138, 214, 0.0322036), 0px 4.90282px 17.7795px rgba(255, 138, 214, 0.0261253), 0px 2.10867px 7.64683px rgba(255, 138, 214, 0.0180827);
     border-radius: 16px;
+
+    @media (max-width: $tabletMax) {
+      width: 342rem;
+      padding: 24rem;
+    }
   }
 
   .step {
     display: flex;
     gap: 61rem;
+
+    @media (max-width: $tabletMax) {
+      gap: 16rem;
+      flex-direction: column;
+    }
   }
 
   .number {
@@ -106,13 +134,27 @@
       line-height: 44rem;
       color: $neutral3;
       white-space: nowrap;
+
+      @media (max-width: $tabletMax) {
+          color: $neutral1;
+      }
     }
   }
 
   .objectifs {
+    @media (max-width: $tabletMax) {
+      margin-left: 16rem;
+    }
+
     p {
       color: $neutral1;
       position: relative;
+
+      @media (max-width: $tabletMax) {
+        font-size: 14rem;
+        font-weight: 100;
+        line-height: 18rem;
+      }
     }
 
     p:before {
@@ -133,6 +175,10 @@
     border: 1px solid $neutral3;
     width: 100%;
     margin: 56rem 0;
+
+    @media (max-width: $tabletMax) {
+      margin: 40rem 0;
+    }
   }
 
   .bg-roadmap {
@@ -143,6 +189,10 @@
     z-index: -1;
     width: 1111rem;
     top: 70rem;
+
+    @media (max-width: $tabletMax) {
+      display: none;
+    }
   }
 
 </style>

@@ -58,7 +58,11 @@
         currentPageElt = null;
         setTimeout(() => {
             currentPage = page;
-            document.getElementById('elts').style.transform = 'translateX(-' + page * (804 + 80) + 'rem)'
+            let size = 804 + 80;
+            if (window.outerWidth < 992) {
+                size = 340 + 80;
+            }
+            document.getElementById('elts').style.transform = 'translateX(-' + page * (size) + 'rem)'
             setTimeout(() => {
                 currentPageElt = page;
             }, 300)
@@ -102,11 +106,19 @@
     overflow: hidden;
     width: 100%;
     padding-bottom: 220rem;
+
+    @media (max-width: $tabletMax) {
+      padding-bottom: 120rem;
+    }
   }
 
   .carrousel {
     margin: 0 auto;
     width: 804rem;
+
+    @media (max-width: $tabletMax) {
+      width: 340rem;
+    }
   }
 
   .elts {
@@ -150,6 +162,10 @@
       background-color: transparent;
       background-image: linear-gradient(90deg, var(--myColor1) 0%, var(--myColor2) 100%);
       transition: --myColor1 0.2s ease-in, --myColor2 0.2s ease-in, all 0.2s ease-in;
+
+      @media (max-width: $tabletMax) {
+        width: 340rem;
+      }
     }
 
     &.current-elt img {
@@ -165,6 +181,10 @@
     width: fit-content;
     margin: 80rem auto 0;
     cursor: pointer;
+
+    @media (max-width: $tabletMax) {
+      margin-top: 32rem;
+    }
   }
 
   .pagination-item {

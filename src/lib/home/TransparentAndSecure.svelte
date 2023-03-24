@@ -1,66 +1,78 @@
+<script type="application/javascript">
+    import {onMount} from 'svelte';
+    import {Application} from "@splinetool/runtime";
+
+    onMount(() => {
+        const letter = document.getElementById("letter-1");
+        const spline = new Application(letter);
+
+        spline
+            .load("https://prod.spline.design/YwIbgTq6NwDkAzK8/scene.splinecode");
+    });
+</script>
+
 <section>
-    <img src="/images/home/bg-star.png" class="bg-star" alt="background star">
+    <img src="/images/home/bg-star.png" class="bg-star hm" alt="background star">
+    <img src="/images/home/bg-star-mobile.png" class="bg-star hd" alt="background star">
     <img src="/images/home/bg-star-2.png" class="bg-star2" alt="background star">
-    <div class="info"  id="concept">
+    <div class="info" id="concept">
         <img src="/images/home/aedile-charater.svg" class="aedile-character" alt="Aedile charater">
-        <h3>Transparent and Secure, Built on the Internet Computer</h3>
-        <p>Our solution is built with DFINITY's Internet of the Future. A new technology stack that is tamper-proof,
-            fast, scales to billions of users around the world, and supports a new kind of autonomous software.</p>
+        <h3 class="hm">Transparent and Secure,<br/> Built on the Internet Computer</h3>
+        <h3 class="hd">Transparent and Secure, Built on the Internet Computer</h3>
+        <p>aedile is built on the first true World Computer, DFINITY's Internet Computer, a Proof-of-Useful-Work (PoUW)
+            blockchain that runs under the control of an advanced DAO to completely automate and decentralize processes
+            such as protocol upgrades.</p>
     </div>
     <div class="container">
         <div class="row">
             <div class="column">
-                <img src="/images/home/group-1.png" alt="Group 1"/>
-                <h4>For Builders</h4>
+<!--                <img src="/images/home/group-1.png" alt="Group 1"/>-->
+                <canvas id="letter-1"></canvas>
+                <h4>Secure</h4>
                 <p>
-                    The Internet Computer is a completely novel public blockchain that can run at web speed and scale
-                    without bounds.
+                    aedile is entirely built on the Internet Computer, a tamper-proof blockchain that can run at web speed, and scales without bounds to billions of users around the world.
                 </p>
             </div>
             <div class="column">
                 <img src="/images/home/group-2.png" alt="Group 2"/>
-                <h4>Tokenize Everything</h4>
+                <h4>Efficient</h4>
                 <p>
-                    The Internet Computer is the world’s first blockchain where web experiences can be built with smart
-                    contracts (canisters) served directly to end users in a browser.
+                    Harness the power and breakthrough performance of the Internet Computer, and embrace the simplicity of a unified blockchain driving optimal efficiency.
                 </p>
             </div>
             <div class="column">
                 <img src="/images/home/group-3.png" alt="Group 3"/>
-                <h4>Decentralization</h4>
+                <h4>Scalable</h4>
                 <p>
-                    Why build decentralized software just to run your front end on monopolistic private platforms,
-                    proprietary cloud hosting and database services?
+                    ICP is the first blockchain protocol where web experiences can be built with smart contracts that scale to provide web interfaces that end-users can access through their browser.
                 </p>
             </div>
         </div>
         <div class="row">
             <div class="column">
                 <img src="/images/home/group-4.png" alt="Group 4"/>
-                <h4>Power of the Open Web</h4>
+                <h4>Decentralized</h4>
                 <p>
-                    Any service built on the Internet Computer can share functionality and data with others with the
-                    permission of the creator.
+                    ICP runs on a decentralized network with dedicated hardware established by independent parties, and supports a new kind of autonomous software.
                 </p>
             </div>
             <div class="column">
                 <img src="/images/home/group-5.png" alt="Group 5"/>
-                <h4>Exciting New Paradigm</h4>
+                <h4>Cost-effective</h4>
                 <p>
-                    The radical rethinking baked into the Internet Computer means much of the typical complexity of
-                    software architecture melts away.
+                    Save money by storing your data in ICP smart contracts.
                 </p>
             </div>
             <div class="column">
                 <img src="/images/home/group-6.png" alt="Group 6"/>
-                <h4>Motoko</h4>
+                <h4>Open</h4>
                 <p>
-                    The Motoko language is optimized for authoring for the Internet Computer.
+                    Share in our vision of an open source world and help build it !
                 </p>
             </div>
         </div>
         <a href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" class="btn-gradient" data-text="Try the beta" target="_blank">
-            <img src="/images/arrow.svg"  class="icon" alt="Arrow Learn more">
+            <img src="/images/arrow.svg" class="icon" alt="Arrow Learn more">
         </a>
     </div>
 </section>
@@ -72,6 +84,11 @@
   section {
     margin-top: 250rem;
     padding-top: 320rem;
+
+    @media (max-width: $tabletMax) {
+      margin-top: 0;
+      padding-top: 150rem;
+    }
   }
 
   .bg-star {
@@ -118,9 +135,18 @@
     text-align: center;
     margin: 0 auto;
 
+    @media (max-width: $tabletMax) {
+      max-width: 342rem
+    }
+
     h3 {
       color: $neutral2;
       margin-top: 32rem;
+      margin-bottom: 16rem;
+
+      @media (max-width: $tabletMax) {
+        margin-top: 16rem;
+      }
     }
 
     p {
@@ -134,6 +160,11 @@
     justify-content: space-between;
     margin-top: 56rem;
 
+    @media (max-width: $tabletMax) {
+      margin-top: 32rem;
+      flex-direction: column;
+    }
+
     .column {
       flex: 1;
       display: flex;
@@ -141,9 +172,29 @@
       text-align: center;
       max-width: 311rem;
 
-      img {
+      @media (max-width: $tabletMax) {
+        max-width: 100%;
+        margin-bottom: 32rem;
+      }
+
+      canvas {
+        width: 207rem !important;
+        margin: -95px auto -57rem !important;
+
+        @media (max-width: $tabletMax) {
+          max-width: 100% !important;
+          width: 100rem !important;
+        }
+      }
+
+      img, canvas {
         width: 150rem;
         margin: 0 auto 16rem;
+
+        @media (max-width: $tabletMax) {
+          max-width: 100%;
+          width: 100rem;
+        }
       }
 
       h4 {
@@ -169,6 +220,11 @@
     width: fit-content;
     margin: 72rem auto 0;
     padding: 16rem;
+    gap: 8rem;
+
+    @media (max-width: $tabletMax) {
+      margin: 8rem auto 0;
+    }
   }
 
 </style>

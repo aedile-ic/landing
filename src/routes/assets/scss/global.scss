@@ -9,6 +9,10 @@ html {
   font-size: 0.0694445vw;
   scroll-behavior: smooth;
   font-family: poppins, serif;
+
+  @media (max-width: $tabletMax) {
+    font-size: 0.2666666vw;
+  }
 }
 
 *,
@@ -47,8 +51,30 @@ a {
   width: 1200rem;
   margin: 0 auto;
   position: relative;
+
+  @media (max-width: $tabletMax) {
+    width: 342rem;
+  }
 }
 
 section {
   position: relative;
+}
+
+.hd, .hdf {
+  display: none;
+}
+
+@media (max-width: $tabletMax) {
+  .hm {
+    display: none !important;
+  }
+
+  .hd {
+    display: block;
+  }
+
+  .hdf {
+    display: flex;
+  }
 }

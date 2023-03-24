@@ -3,10 +3,11 @@
 </script>
 
 <section id="features">
-    <img src="/images/home/bg-work-together.svg" class="bg-work-together" alt="background work together">
+    <img src="/images/home/bg-work-together.svg" class="bg-work-together hm" alt="background work together">
+    <img src="/images/home/bg-work-together-mobile.svg" class="bg-work-together hd" alt="background work together">
 
     <div class="container">
-        <h2>Work together in one shared space</h2>
+        <h2>Work together, in one shared space</h2>
     </div>
 
     <Carrousel/>
@@ -27,11 +28,19 @@
   .container {
     margin: 0 auto;
     text-align: center;
+
+    @media (max-width: $tabletMax) {
+      text-align: left;
+    }
   }
 
   h2 {
     color: $white;
     margin-bottom: 80rem;
+
+    @media (max-width: $tabletMax) {
+      margin-bottom: 32rem;
+    }
   }
 </style>
 

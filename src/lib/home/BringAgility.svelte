@@ -1,32 +1,36 @@
 <section>
     <div class="container">
-        <h2>
-            Bring agility and a DAO twist to the way you manage your projects !
+        <h2 class="hm">
+            Bring agility, and a DAO twist to<br/> the way you manage your projects !
+        </h2>
+
+        <h2 class="hd">
+            Bring agility, and a DAO twist to the way you manage your projects !
         </h2>
 
         <div class="infos">
             <div class="info">
                 <h3>
-                    Decentralised collaboration
+                    Decentralize your work
                 </h3>
                 <p>
-                    Any changes you make on your Kanban board
+                    Create, organize and manage your projects on the blockchain
                 </p>
             </div>
             <div class="info">
                 <h3>
-                    Reward accomplished tasks
+                    Reward your team
                 </h3>
                 <p>
-                    Make it easy for your team to focus on tasks
+                    Award tokens to your team and encourage their progress
                 </p>
             </div>
             <div class="info">
                 <h3>
-                    Raise funds from investors
+                    Raise funds
                 </h3>
                 <p>
-                    Aedile's intuitive features give any team the ability
+                    Find fundings for your ideas among a like-minded community
                 </p>
             </div>
 
@@ -46,6 +50,10 @@
   h2 {
     max-width: 831rem;
     color: $neutral2;
+
+    @media (max-width: $tabletMax) {
+      max-width: 342rem
+    }
   }
 
   .infos {
@@ -53,6 +61,10 @@
     flex-direction: column;
     gap: 32rem;
     margin-top: 96rem;
+
+    @media (max-width: $tabletMax) {
+      margin-top: 48rem;
+    }
   }
 
   .info {
@@ -81,6 +93,10 @@
     right: 0;
     top: 165rem;
     width: 784rem;
+
+    @media (max-width: $tabletMax) {
+      display: none;
+    }
   }
 
 </style>
