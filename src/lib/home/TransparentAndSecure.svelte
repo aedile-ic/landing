@@ -1,15 +1,15 @@
-<script type="application/javascript">
-    import {onMount} from 'svelte';
-    import {Application} from "@splinetool/runtime";
+<!--<script type="application/javascript">-->
+<!--    import {onMount} from 'svelte';-->
+<!--    import {Application} from "@splinetool/runtime";-->
 
-    onMount(() => {
-        const letter = document.getElementById("letter-1");
-        const spline = new Application(letter);
+<!--    onMount(() => {-->
+<!--        const letter = document.getElementById("letter-1");-->
+<!--        const spline = new Application(letter);-->
 
-        spline
-            .load("https://prod.spline.design/YwIbgTq6NwDkAzK8/scene.splinecode");
-    });
-</script>
+<!--        spline-->
+<!--            .load("https://prod.spline.design/YwIbgTq6NwDkAzK8/scene.splinecode");-->
+<!--    });-->
+<!--</script>-->
 
 <section>
     <img src="/images/home/bg-star.png" class="bg-star hm" alt="background star">
@@ -26,8 +26,8 @@
     <div class="container">
         <div class="row">
             <div class="column">
-<!--                <img src="/images/home/group-1.png" alt="Group 1"/>-->
-                <canvas id="letter-1"></canvas>
+                <img src="/images/home/group-1.png" alt="Group 1"/>
+<!--                <canvas id="letter-1"></canvas>-->
                 <h4>Secure</h4>
                 <p>
                     aedile is entirely built on the Internet Computer, a tamper-proof blockchain that can run at web speed, and scales without bounds to billions of users around the world.

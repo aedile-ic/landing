@@ -22,7 +22,7 @@
         }
 
         spline
-            .load("https://prod.spline.design/98jFd6yrp4eAmKOj/scene.splinecode")
+            .load("https://prod.spline.design/98jFd6yrp4eAmKOj/scene.splinecode?v=1.0")
             .then(() => {
                 const piocheInstance = spline.findObjectByName("Pioche Instance");
                 const piocheInstance2 = spline.findObjectByName("Pioche Instance 2");

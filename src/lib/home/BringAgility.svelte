@@ -1,11 +1,11 @@
 <section>
     <div class="container">
         <h2 class="hm">
-            Bring agility, and a DAO twist to<br/> the way you manage your projects !
+            Bring agility, and a DAO twist, to<br/> the way you manage your projects !
         </h2>
 
         <h2 class="hd">
-            Bring agility, and a DAO twist to the way you manage your projects !
+            Bring agility, and a DAO twist, to the way you manage your projects !
         </h2>
 
         <div class="infos">

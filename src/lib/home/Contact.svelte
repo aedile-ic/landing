@@ -79,7 +79,8 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 80.92rem;
-    filter: drop-shadow(0px 91px 330px rgba(255, 138, 214, 0.07)) drop-shadow(0px 42.0721px 152.569px rgba(255, 138, 214, 0.0519173)) drop-shadow(0px 24.0727px 87.2965px rgba(255, 138, 214, 0.0438747)) drop-shadow(0px 14.6119px 52.9883px rgba(255, 138, 214, 0.0377964)) drop-shadow(0px 8.80434px 31.9278px rgba(255, 138, 214, 0.0322036)) drop-shadow(0px 4.90282px 17.7795px rgba(255, 138, 214, 0.0261253)) drop-shadow(0px 2.10867px 7.64683px rgba(255, 138, 214, 0.0180827));
+    box-shadow: 0 5px 150px rgba(255, 138, 214, 0.25);
+    border-radius: 30px;
 
     @media (max-width: $tabletMax) {
       width: 342rem;

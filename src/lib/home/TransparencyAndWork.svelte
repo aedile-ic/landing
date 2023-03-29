@@ -1,6 +1,6 @@
 <section>
     <h3>Decentralized and Transparent : Our Vision</h3>
-    <p>edile's main goal is to become a hub for developers and entrepreneurs to meet, share and collaborate around innovative projects. Our primary objective is to build a tool to foster communities and facilitate funding around new ideas.</p>
+    <p>Aedile's main goal is to become a hub for developers and entrepreneurs to meet, share and collaborate around innovative projects. Our primary objective is to build a tool to foster communities and facilitate funding around new ideas.</p>
 
     <p class="our-vision">
         As a developer, you will be able to earn cryptos, while bringing your expertise to the ICP ecosystem.<br/>
@@ -26,7 +26,7 @@
             <div class="badge soon">
                 Soon
             </div>
-            <h4>Earn Funds,<br/> Grow  Your Ideas</h4>
+            <h4>Earn Funds, Grow<br/> Your Ideas</h4>
         </div>
     </div>
 </section>
