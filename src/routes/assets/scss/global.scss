@@ -11,6 +11,10 @@ html {
   font-family: poppins, serif;
 
   @media (max-width: $tabletMax) {
+    font-size: 0.1012145vw;
+  }
+
+  @media (max-width: $mobileMax) {
     font-size: 0.2666666vw;
   }
 }
@@ -53,6 +57,10 @@ a {
   position: relative;
 
   @media (max-width: $tabletMax) {
+    width: 850rem;
+  }
+
+  @media (max-width: $mobileMax) {
     width: 342rem;
   }
 }
@@ -61,20 +69,20 @@ section {
   position: relative;
 }
 
-.hd, .hdf {
-  display: none;
+@media only screen and (min-width: $tabletMax) {
+  .hd, .hdf {
+    display: none;
+  }
 }
 
-@media (max-width: $tabletMax) {
-  .hm {
+@media only screen and (max-width: $tabletMax) and (min-width: $mobileMax)  {
+  .ht {
     display: none !important;
   }
+}
 
-  .hd {
-    display: block;
-  }
-
-  .hdf {
-    display: flex;
+@media (max-width: $mobileMax) {
+  .hm {
+    display: none !important;
   }
 }

@@ -44,7 +44,7 @@
             <img src="/images/logo-text.svg" alt="Logo aedile" class="logo-header">
         </a>
     </div>
-    <div class="ancors hm">
+    <div class="ancors ht hm">
         <a class="link" href="#features">
             Features
         </a>
@@ -61,7 +61,7 @@
     <div class="try">
         <a class="btn" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" target="_blank"
            rel="noopener noreferrer">
-            <span class="hm">Try the</span> beta
+            <span class="ht hm">Try the</span> beta
             <img alt="Try beta" class="icon" src="/images/arrow-try-beta-icon.svg"/>
         </a>
 

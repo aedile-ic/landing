@@ -7,10 +7,10 @@
 
     <div class="container join">
         <div class="card">
-            <img src="/images/home/left-contact.svg" class="left-contact hm" alt="Card left contact">
-            <img src="/images/home/left-contact-mobile.svg" class="left-contact hd" alt="Card left contact">
-            <img src="/images/home/right-contact.svg" class="right-contact hm" alt="Card right contact">
-            <img src="/images/home/right-contact-mobile.svg" class="right-contact hd" alt="Card right contact">
+            <img src="/images/home/left-contact.svg" class="left-contact ht hm" alt="Card left contact">
+            <img src="/images/home/left-contact-mobile.svg" class="left-contact  hd" alt="Card left contact">
+            <img src="/images/home/right-contact.svg" class="right-contact ht hm" alt="Card right contact">
+            <img src="/images/home/right-contact-mobile.svg" class="right-contact  hd" alt="Card right contact">
             <img src="/images/home/contact-image.png" class="contact-image" alt="Contact image">
             <div class="info">
                 <h3>Join the ædile community now!</h3>
@@ -52,6 +52,14 @@
     top: -160rem;
     width: 100%;
     z-index: -1;
+
+    @media (max-width: $tabletMax) {
+      top: 0;
+    }
+
+    @media (max-width: $mobileMax) {
+      top: -160rem;
+    }
   }
 
   .bg-contact-line {
@@ -83,9 +91,13 @@
     border-radius: 30px;
 
     @media (max-width: $tabletMax) {
-      width: 342rem;
+      width: 850rem;
       height: 359rem;
       padding-left: 25rem;
+    }
+
+    @media (max-width: $mobileMax) {
+      width: 342rem;
     }
 
     .info {
@@ -199,6 +211,10 @@
       color: $neutral3;
 
       @media (max-width: $tabletMax) {
+        width: 850rem;
+      }
+
+      @media (max-width: $mobileMax) {
         width: 342rem;
       }
     }

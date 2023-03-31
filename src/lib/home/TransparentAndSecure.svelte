@@ -12,12 +12,12 @@
 <!--</script>-->
 
 <section>
-    <img src="/images/home/bg-star.png" class="bg-star hm" alt="background star">
-    <img src="/images/home/bg-star-mobile.png" class="bg-star hd" alt="background star">
+    <img src="/images/home/bg-star.png" class="bg-star  hm" alt="background star">
+    <img src="/images/home/bg-star-mobile.png" class="bg-star ht hd" alt="background star">
     <img src="/images/home/bg-star-2.png" class="bg-star2" alt="background star">
     <div class="info" id="concept">
         <img src="/images/home/aedile-charater.svg" class="aedile-character" alt="Aedile charater">
-        <h3 class="hm">Transparent and Secure,<br/> Built on the Internet Computer</h3>
+        <h3 class="ht hm">Transparent and Secure,<br/> Built on the Internet Computer</h3>
         <h3 class="hd">Transparent and Secure, Built on the Internet Computer</h3>
         <p>aedile is built on the first true World Computer, DFINITY's Internet Computer, a Proof-of-Useful-Work (PoUW)
             blockchain that runs under the control of an advanced DAO to completely automate and decentralize processes
@@ -41,7 +41,7 @@
                 </p>
             </div>
             <div class="column">
-                <img src="/images/home/group-3.png" alt="Group 3"/>
+                <img src="/images/home/group-5.png" alt="Group 5"/>
                 <h4>Scalable</h4>
                 <p>
                     ICP is the first blockchain protocol where web experiences can be built with smart contracts that scale to provide web interfaces that end-users can access through their browser.
@@ -50,21 +50,21 @@
         </div>
         <div class="row">
             <div class="column">
-                <img src="/images/home/group-4.png" alt="Group 4"/>
+                <img src="/images/home/group-6.png" alt="Group 6"/>
                 <h4>Decentralized</h4>
                 <p>
                     ICP runs on a decentralized network with dedicated hardware established by independent parties, and supports a new kind of autonomous software.
                 </p>
             </div>
             <div class="column">
-                <img src="/images/home/group-5.png" alt="Group 5"/>
+                <img src="/images/home/group-3.png" alt="Group 3"/>
                 <h4>Cost-effective</h4>
                 <p>
                     Save money by storing your data in ICP smart contracts.
                 </p>
             </div>
             <div class="column">
-                <img src="/images/home/group-6.png" alt="Group 6"/>
+                <img src="/images/home/group-4.png" alt="Group 4"/>
                 <h4>Open</h4>
                 <p>
                     Share in our vision of an open source world and help build it !
@@ -136,7 +136,11 @@
     margin: 0 auto;
 
     @media (max-width: $tabletMax) {
-      max-width: 342rem
+      width: 850rem;
+    }
+
+    @media (max-width: $mobileMax) {
+      width: 342rem;
     }
 
     h3 {
@@ -160,7 +164,7 @@
     justify-content: space-between;
     margin-top: 56rem;
 
-    @media (max-width: $tabletMax) {
+    @media (max-width: $mobileMax) {
       margin-top: 32rem;
       flex-direction: column;
     }
@@ -173,8 +177,13 @@
       max-width: 311rem;
 
       @media (max-width: $tabletMax) {
+        max-width: 400rem;
+        text-align: center;
+        margin: 0 auto 32rem;
+      }
+
+      @media (max-width: $mobileMax) {
         max-width: 100%;
-        margin-bottom: 32rem;
       }
 
       canvas {

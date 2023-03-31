@@ -10,7 +10,7 @@
             <h1>Build and fund, 100% on chain</h1>
             <p>aedile is the first open and decentralized service offering individuals, teams, and communities, an alternative to their favorite management tools.</p>
             <div class="social-media">
-                <a class="btn try hm" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" target="_blank" rel="noopener noreferrer">
+                <a class="btn try ht hm" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" target="_blank" rel="noopener noreferrer">
                     Try the beta
                     <img alt="Try beta" class="icon" src="/images/arrow-try-beta-icon.svg"/>
                 </a>

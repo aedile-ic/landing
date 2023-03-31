@@ -59,7 +59,7 @@
         setTimeout(() => {
             currentPage = page;
             let size = 804 + 80;
-            if (window.outerWidth < 992) {
+            if (window.outerWidth < 480) {
                 size = 340 + 80;
             }
             document.getElementById('elts').style.transform = 'translateX(-' + page * (size) + 'rem)'
@@ -116,7 +116,7 @@
     margin: 0 auto;
     width: 804rem;
 
-    @media (max-width: $tabletMax) {
+    @media (max-width: $mobileMax) {
       width: 340rem;
     }
   }
@@ -163,7 +163,7 @@
       background-image: linear-gradient(90deg, var(--myColor1) 0%, var(--myColor2) 100%);
       transition: --myColor1 0.2s ease-in, --myColor2 0.2s ease-in, all 0.2s ease-in;
 
-      @media (max-width: $tabletMax) {
+      @media (max-width: $mobileMax) {
         width: 340rem;
       }
     }

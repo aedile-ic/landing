@@ -3,8 +3,8 @@
 </script>
 
 <section id="features">
-    <img src="/images/home/bg-work-together.svg" class="bg-work-together hm" alt="background work together">
-    <img src="/images/home/bg-work-together-mobile.svg" class="bg-work-together hd" alt="background work together">
+    <img src="/images/home/bg-work-together.svg" class="bg-work-together  hm" alt="background work together">
+    <img src="/images/home/bg-work-together-mobile.svg" class="bg-work-together ht hd" alt="background work together">
 
     <div class="container">
         <h2>Work together, in one shared space</h2>

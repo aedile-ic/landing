@@ -1,6 +1,6 @@
 <section>
     <div class="container">
-        <h2 class="hm">
+        <h2 class="ht hm">
             Bring agility, and a DAO twist, to<br/> the way you manage your projects !
         </h2>
 
@@ -62,7 +62,13 @@
     gap: 32rem;
     margin-top: 96rem;
 
-    @media (max-width: $tabletMax) {
+    @media (max-width: $tabletMax) and (min-width: $mobileMax) {
+      align-items: flex-end;
+      text-align: right;
+      margin-top: 48rem;
+    }
+
+    @media (max-width: $mobileMax) {
       margin-top: 48rem;
     }
   }

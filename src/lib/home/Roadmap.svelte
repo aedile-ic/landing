@@ -93,7 +93,7 @@
     color: $neutral2;
     margin-bottom: 16rem;
 
-    @media (max-width: $tabletMax) {
+    @media (max-width: $mobileMax) {
       font-size: 32rem;
       line-height: 36rem;
     }
@@ -112,8 +112,12 @@
     border-radius: 16px;
 
     @media (max-width: $tabletMax) {
-      width: 342rem;
+      width: 850rem;
       padding: 24rem;
+    }
+
+    @media (max-width: $mobileMax) {
+      width: 342rem;
     }
   }
 
@@ -121,7 +125,7 @@
     display: flex;
     gap: 61rem;
 
-    @media (max-width: $tabletMax) {
+    @media (max-width: $mobileMax) {
       gap: 16rem;
       flex-direction: column;
     }
@@ -135,14 +139,14 @@
       color: $neutral3;
       white-space: nowrap;
 
-      @media (max-width: $tabletMax) {
+      @media (max-width: $mobileMax) {
           color: $neutral1;
       }
     }
   }
 
   .objectifs {
-    @media (max-width: $tabletMax) {
+    @media (max-width: $mobileMax) {
       margin-left: 16rem;
     }
 
@@ -150,7 +154,7 @@
       color: $neutral1;
       position: relative;
 
-      @media (max-width: $tabletMax) {
+      @media (max-width: $mobileMax) {
         font-size: 14rem;
         font-weight: 100;
         line-height: 18rem;

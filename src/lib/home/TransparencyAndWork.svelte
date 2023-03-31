@@ -42,8 +42,12 @@
     text-align: center;
 
     @media (max-width: $tabletMax) {
-      max-width: 342rem;
+      width: 850rem;
       margin: 100rem auto 0;
+    }
+
+    @media (max-width: $mobileMax) {
+      width: 342rem;
     }
   }
 
@@ -53,7 +57,11 @@
     color: $neutral3;
 
     @media (max-width: $tabletMax) {
-      max-width: 342rem;
+      width: 850rem;
+    }
+
+    @media (max-width: $mobileMax) {
+      width: 342rem;
     }
   }
 
@@ -93,6 +101,10 @@
     display: flex;
     flex-direction: column;
     gap: 16rem;
+
+    @media (max-width: $tabletMax) {
+      max-width: 100%;
+    }
   }
 
   h4 {
