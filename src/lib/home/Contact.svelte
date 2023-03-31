@@ -3,30 +3,30 @@
         <path class="bg-contact" d="M0 0L1440 447V1412H0L0 0Z" fill="#141327"/>
     </svg>
 
-    <img src="/images/home/bg-contact-line.svg" class="bg-contact-line" alt="Background contact line"/>
+    <img width="677" height="1129" loading="lazy" src="/images/home/bg-contact-line.svg" class="bg-contact-line" alt="Background contact line"/>
 
     <div class="container join">
         <div class="card">
-            <img src="/images/home/left-contact.svg" class="left-contact ht hm" alt="Card left contact">
-            <img src="/images/home/left-contact-mobile.svg" class="left-contact  hd" alt="Card left contact">
-            <img src="/images/home/right-contact.svg" class="right-contact ht hm" alt="Card right contact">
-            <img src="/images/home/right-contact-mobile.svg" class="right-contact  hd" alt="Card right contact">
-            <img src="/images/home/contact-image.png" class="contact-image" alt="Contact image">
+            <img width="1016" height="400" loading="lazy" src="/images/home/left-contact.svg" class="left-contact ht hm" alt="Card left contact">
+            <img width="317" height="360" loading="lazy" src="/images/home/left-contact-mobile.svg" class="left-contact  hd" alt="Card left contact">
+            <img width="582" height="400" loading="lazy" src="/images/home/right-contact.svg" class="right-contact ht hm" alt="Card right contact">
+            <img width="317" height="360" loading="lazy" src="/images/home/right-contact-mobile.svg" class="right-contact  hd" alt="Card right contact">
+            <img width="702" height="587" loading="lazy" src="/images/home/contact-image.png" class="contact-image" alt="Contact image">
             <div class="info">
                 <h3>Join the ædile community now!</h3>
                 <div class="social-media">
                     <a class="btn-gradient secondary" data-text="Twitter" href="https://twitter.com/aedile_ic"
                        target="_blank" rel="noopener noreferrer">
-                        <img alt="Try beta" class="icon" src="/images/twitter.svg"/>
+                        <img width="24" height="24" loading="lazy" alt="Try beta" class="icon" src="/images/twitter.svg"/>
                     </a>
                     <a class="btn-gradient secondary" data-text="GitHub" href="https://github.com/aedile-ic"
                        target="_blank" rel="noopener noreferrer">
-                        <img alt="Try beta" class="icon" src="/images/github.svg"/>
+                        <img width="24" height="24" loading="lazy" alt="Try beta" class="icon" src="/images/github.svg"/>
                     </a>
                     <a class="btn-gradient secondary" data-text="Medium"
                        href="https://medium.com/@esensconsulting"
                        target="_blank" rel="noopener noreferrer">
-                        <img alt="Try beta" class="icon" src="/images/medium.svg"/>
+                        <img width="24" height="24" loading="lazy" alt="Try beta" class="icon" src="/images/medium.svg"/>
                     </a>
                 </div>
             </div>
@@ -146,6 +146,7 @@
       right: -80rem;
       bottom: 0;
       width: 702rem;
+      height: auto;
 
       @media (max-width: $tabletMax) {
         display: none;
@@ -160,6 +161,7 @@
     top: 0;
     bottom: 0;
     width: 1016rem;
+    height: auto;
 
     @media (max-width: $tabletMax) {
       width: 316.98rem;
@@ -172,6 +174,7 @@
     top: 0;
     bottom: 0;
     width: 582rem;
+    height: auto;
 
     @media (max-width: $tabletMax) {
       width: 316rem;

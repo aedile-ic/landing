@@ -3,7 +3,7 @@
 </script>
 
 <section>
-    <img alt="Background build and fund" class="bg-build-and-fund" src="/images/home/bg-build-and-fund.svg"/>
+    <img width="1440" height="1611" loading="lazy" alt="Background build and fund" class="bg-build-and-fund" src="/images/home/bg-build-and-fund.svg"/>
 
     <div class="container">
         <div class="bloc-build-and-fund">
@@ -12,21 +12,21 @@
             <div class="social-media">
                 <a class="btn try ht hm" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" target="_blank" rel="noopener noreferrer">
                     Try the beta
-                    <img alt="Try beta" class="icon" src="/images/arrow-try-beta-icon.svg"/>
+                    <img width="12" height="16" loading="lazy" alt="Try beta" class="icon" src="/images/arrow-try-beta-icon.svg"/>
                 </a>
                 <a class="btn-gradient secondary" href="https://twitter.com/aedile_ic" target="_blank" rel="noopener noreferrer">
-                    <img alt="Try beta" class="icon" src="/images/twitter.svg"/>
+                    <img width="24" height="24" loading="lazy" alt="Try beta" class="icon" src="/images/twitter.svg"/>
                 </a>
                 <a class="btn-gradient secondary" href="https://github.com/aedile-ic" target="_blank" rel="noopener noreferrer">
-                    <img alt="Try beta" class="icon" src="/images/github.svg"/>
+                    <img width="24" height="24" loading="lazy" alt="Try beta" class="icon" src="/images/github.svg"/>
                 </a>
                 <a class="btn-gradient secondary" href="https://medium.com/@esensconsulting" target="_blank" rel="noopener noreferrer">
-                    <img alt="Try beta" class="icon" src="/images/medium.svg"/>
+                    <img width="24" height="24" loading="lazy" alt="Try beta" class="icon" src="/images/medium.svg"/>
                 </a>
             </div>
             <a class="btn try hdf" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" target="_blank" rel="noopener noreferrer">
                 Try the beta
-                <img alt="Try beta" class="icon" src="/images/arrow-try-beta-icon.svg"/>
+                <img width="12" height="16" loading="lazy" alt="Try beta" class="icon" src="/images/arrow-try-beta-icon.svg"/>
             </a>
         </div>
     </div>

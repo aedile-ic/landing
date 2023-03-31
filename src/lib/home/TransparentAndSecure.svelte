@@ -1,22 +1,9 @@
-<!--<script type="application/javascript">-->
-<!--    import {onMount} from 'svelte';-->
-<!--    import {Application} from "@splinetool/runtime";-->
-
-<!--    onMount(() => {-->
-<!--        const letter = document.getElementById("letter-1");-->
-<!--        const spline = new Application(letter);-->
-
-<!--        spline-->
-<!--            .load("https://prod.spline.design/YwIbgTq6NwDkAzK8/scene.splinecode");-->
-<!--    });-->
-<!--</script>-->
-
 <section>
-    <img src="/images/home/bg-star.png" class="bg-star  hm" alt="background star">
-    <img src="/images/home/bg-star-mobile.png" class="bg-star ht hd" alt="background star">
-    <img src="/images/home/bg-star-2.png" class="bg-star2" alt="background star">
+    <img width="1440" height="1455" loading="lazy" src="/images/home/bg-star.png" class="bg-star  hm" alt="background star">
+    <img width="390" height="2204" loading="lazy" src="/images/home/bg-star-mobile.png" class="bg-star ht hd" alt="background star">
+    <img width="1440" height="1171" loading="lazy" src="/images/home/bg-star-2.png" class="bg-star2" alt="background star">
     <div class="info" id="concept">
-        <img src="/images/home/aedile-charater.svg" class="aedile-character" alt="Aedile charater">
+        <img width="246" height="247" loading="lazy" src="/images/home/aedile-charater.svg" class="aedile-character" alt="Aedile charater">
         <h3 class="ht hm">Transparent and Secure,<br/> Built on the Internet Computer</h3>
         <h3 class="hd">Transparent and Secure, Built on the Internet Computer</h3>
         <p>aedile is built on the first true World Computer, DFINITY's Internet Computer, a Proof-of-Useful-Work (PoUW)
@@ -26,22 +13,21 @@
     <div class="container">
         <div class="row">
             <div class="column">
-                <img src="/images/home/group-1.png" alt="Group 1"/>
-<!--                <canvas id="letter-1"></canvas>-->
+                <img width="151" height="128" loading="lazy" src="/images/home/group-1.png" alt="Group 1"/>
                 <h4>Secure</h4>
                 <p>
                     aedile is entirely built on the Internet Computer, a tamper-proof blockchain that can run at web speed, and scales without bounds to billions of users around the world.
                 </p>
             </div>
             <div class="column">
-                <img src="/images/home/group-2.png" alt="Group 2"/>
+                <img width="151" height="128" loading="lazy" src="/images/home/group-2.png" alt="Group 2"/>
                 <h4>Efficient</h4>
                 <p>
                     Harness the power and breakthrough performance of the Internet Computer, and embrace the simplicity of a unified blockchain driving optimal efficiency.
                 </p>
             </div>
             <div class="column">
-                <img src="/images/home/group-5.png" alt="Group 5"/>
+                <img width="151" height="127" loading="lazy" src="/images/home/group-5.png" alt="Group 5"/>
                 <h4>Scalable</h4>
                 <p>
                     ICP is the first blockchain protocol where web experiences can be built with smart contracts that scale to provide web interfaces that end-users can access through their browser.
@@ -50,21 +36,21 @@
         </div>
         <div class="row">
             <div class="column">
-                <img src="/images/home/group-6.png" alt="Group 6"/>
+                <img width="151" height="127" loading="lazy" src="/images/home/group-6.png" alt="Group 6"/>
                 <h4>Decentralized</h4>
                 <p>
                     ICP runs on a decentralized network with dedicated hardware established by independent parties, and supports a new kind of autonomous software.
                 </p>
             </div>
             <div class="column">
-                <img src="/images/home/group-3.png" alt="Group 3"/>
+                <img width="151" height="128" loading="lazy" src="/images/home/group-3.png" alt="Group 3"/>
                 <h4>Cost-effective</h4>
                 <p>
                     Save money by storing your data in ICP smart contracts.
                 </p>
             </div>
             <div class="column">
-                <img src="/images/home/group-4.png" alt="Group 4"/>
+                <img width="151" height="127" loading="lazy" src="/images/home/group-4.png" alt="Group 4"/>
                 <h4>Open</h4>
                 <p>
                     Share in our vision of an open source world and help build it !
@@ -72,7 +58,7 @@
             </div>
         </div>
         <a href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" class="btn-gradient" data-text="Try the beta" target="_blank">
-            <img src="/images/arrow.svg" class="icon" alt="Arrow Learn more">
+            <img width="16" height="16" loading="lazy" src="/images/arrow.svg" class="icon" alt="Arrow Learn more">
         </a>
     </div>
 </section>
@@ -126,6 +112,7 @@
 
   .aedile-character  {
     width: 246rem;
+    height: auto;
     animation: rotateAedile 5s linear infinite, translateAedile 3s linear infinite;
   }
 
@@ -175,6 +162,7 @@
       flex-direction: column;
       text-align: center;
       max-width: 311rem;
+      height: auto;
 
       @media (max-width: $tabletMax) {
         max-width: 400rem;
@@ -199,6 +187,7 @@
       img, canvas {
         width: 150rem;
         margin: 0 auto 16rem;
+        height: auto;
 
         @media (max-width: $tabletMax) {
           max-width: 100%;

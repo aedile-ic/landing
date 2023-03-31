@@ -5,7 +5,7 @@
             <p>Follow our next steps !</p>
         </div>
 
-        <img src="/images/home/bg-roadmap.png" class="bg-roadmap" alt="Background roadmap">
+        <img width="1111" height="668" loading="lazy" src="/images/home/bg-roadmap.png" class="bg-roadmap" alt="Background roadmap">
         <div class="steps">
             <div class="step">
                 <div class="number">
@@ -15,8 +15,7 @@
                 <div class="objectifs">
                     <p>Team ramp up</p>
                     <p>Staff training</p>
-                    <p>Authentication using Internet Identity</p>
-                    <p>First features</p>
+                    <p>Total redesign of the application</p>
                 </div>
             </div>
             <div class="divider"></div>
@@ -26,9 +25,7 @@
                     <h3>Q2 2023</h3>
                 </div>
                 <div class="objectifs">
-                    <p>Personal dashboards</p>
-                    <p>Dynamic workflows</p>
-                    <p>Task management</p>
+                    <p>UX rework of the application</p>
                 </div>
             </div>
             <div class="divider"></div>
@@ -38,8 +35,9 @@
                     <h3>Q3 2023</h3>
                 </div>
                 <div class="objectifs">
-                    <p>Private dashboards</p>
-                    <p>Task assignments</p>
+                    <p>Public Projects</p>
+                    <p>Presentation of the Projects</p>
+                    <p>Public Dashboards</p>
                 </div>
             </div>
             <div class="divider"></div>
@@ -49,9 +47,7 @@
                     <h3>Q4 2023</h3>
                 </div>
                 <div class="objectifs">
-                    <p>Beta release of the first features</p>
-                    <p>Public dashboards</p>
-                    <p>DAO features</p>
+                    <p>Basic DAO features</p>
                     <p>Funding features</p>
                 </div>
             </div>
@@ -193,6 +189,7 @@
     z-index: -1;
     width: 1111rem;
     top: 70rem;
+    height: auto;
 
     @media (max-width: $tabletMax) {
       display: none;

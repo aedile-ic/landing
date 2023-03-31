@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <img src="/images/home/board-content.svg" class="board" alt="Board aedile">
+    <img width="784" height="697" loading="lazy" src="/images/home/board-content.svg" class="board" alt="Board aedile">
 </section>
 
 <style lang="scss">
@@ -99,6 +99,7 @@
     right: 0;
     top: 165rem;
     width: 784rem;
+    height: auto;
 
     @media (max-width: $tabletMax) {
       display: none;

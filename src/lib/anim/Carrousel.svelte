@@ -25,12 +25,12 @@
             handleNavigation();
         });
 
-        section.addEventListener("touchstart", (event) => touchStartX = event.touches[0].clientX);
+        section.addEventListener("touchstart", (event) => touchStartX = event.touches[0].clientX, {passive: true});
 
-        section.addEventListener("touchend", function (event) {
+        section.addEventListener("touchend", event => {
             touchCurrentX = event.changedTouches[0].clientX;
             handleNavigation();
-        });
+        }, {passive: true});
     });
 
     function handleNavigation() {
@@ -76,7 +76,7 @@
         <div class="elts" id="elts">
             {#each datas as data, i}
                 <div class="elt {i === currentPageElt ? 'current-elt' : ''}" on:click={() => handleClick(i)}>
-                    <img src="{data.src}" alt="{data.alt}"/>
+                    <img width="1191.11" height="700" loading="lazy" src="{data.src}" alt="{data.alt}"/>
                 </div>
             {/each}
         </div>
@@ -156,6 +156,7 @@
 
     img {
       width: 804rem;
+      height: auto;
       padding: 4rem;
       border-radius: 20px;
       box-shadow: 0 0 0 rgba(0, 0, 0, 0);

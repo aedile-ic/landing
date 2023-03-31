@@ -41,7 +41,7 @@
 <nav id="nav">
     <div class="logo">
         <a href="#">
-            <img src="/images/logo-text.svg" alt="Logo aedile" class="logo-header">
+            <img width="84" height="20" loading="lazy" src="/images/logo-text.svg" alt="Logo aedile" class="logo-header">
         </a>
     </div>
     <div class="ancors ht hm">
@@ -62,7 +62,7 @@
         <a class="btn" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" target="_blank"
            rel="noopener noreferrer">
             <span class="ht hm">Try the</span> beta
-            <img alt="Try beta" class="icon" src="/images/arrow-try-beta-icon.svg"/>
+            <img width="12" height="16" loading="lazy" alt="Try beta" class="icon" src="/images/arrow-try-beta-icon.svg"/>
         </a>
 
         <div class="burger hd" on:click={toggle}>
@@ -75,7 +75,7 @@
 </nav>
 
 <div class="menu-mobile"
-     class:side-menu-back={!displayMenu}
+     class:side-menu-back={displayMenu}
 >
     <div class="close" on:click={toggle}>
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,6 +126,7 @@
 
   .logo-header {
     width: 84rem;
+    height: auto;
   }
 
   .ancors {
@@ -163,10 +164,15 @@
     background-color: $neutral5;
     z-index: 999;
     transition: transform 0.2s ease-in;
-    transform: translateX(0%);
+    transform: translateX(-100%);
+    display: none;
+
+    @media (max-width: $tabletMax) {
+      display: flex;
+    }
 
     &.side-menu-back {
-      transform: translateX(-100%);
+      transform: translateX(0%);
     }
 
     .close {
