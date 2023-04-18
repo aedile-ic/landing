@@ -1,0 +1,104 @@
+@import '../variables';
+
+.link {
+  padding: 12rem 15rem;
+  color: $primary;
+  font-size: 16rem;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 600;
+  transition: all $timeTransitionShort;
+
+  &:hover {
+    background: $gradient1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.btn {
+  background: $primary;
+  color: $neutral6;
+  display: flex;
+  gap: 13rem;
+  border-radius: 16px;
+  width: fit-content;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 600;
+  height: fit-content;
+  cursor: pointer;
+  border: 3rem solid transparent;
+  padding: 9rem 12rem;
+  align-items: center;
+
+  &:hover {
+    background: $primaryLight;
+  }
+
+  &:active {
+    background-color: $primary;
+    border: 3rem solid $primaryDark;
+  }
+
+  .icon {
+    margin-right: 4rem;
+    width: 11.6rem;
+  }
+}
+
+.btn-gradient {
+  border: none;
+  outline: none;
+  appearance: none;
+  position: relative;
+  z-index: 3;
+  border-radius: 16px;
+  padding: 10rem 14rem;
+  background: $neutral5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    width: 24rem;
+  }
+
+  &:before {
+    content: attr(data-text);
+    background: $primary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    &:before {
+      background: $primary;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    z-index: -2;
+    border-radius: 16px;
+    background: $neutral5;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: $gradient1;
+
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      &:before {
+        background: $gradient1;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}

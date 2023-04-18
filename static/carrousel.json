@@ -1,0 +1,23 @@
+[
+  {
+    "srcWebp": "/images/carrousel/aedille-screen-1.webp",
+    "src": "/images/carrousel/aedille-screen-1.jpg",
+    "alt": "Picture aedile columns",
+    "title": "Columns",
+    "description": "Customize the way you build, visualize and monitor your projects."
+  },
+  {
+    "srcWebp": "/images/carrousel/aedille-screen-2.webp",
+    "src": "/images/carrousel/aedille-screen-2.jpg",
+    "alt": "Picture aedile cards",
+    "title": "Cards",
+    "description": "Share and manage your tasks and ideas with advanced tailored features."
+  },
+  {
+    "srcWebp": "/images/carrousel/aedille-screen-3.webp",
+    "src": "/images/carrousel/aedille-screen-3.jpg",
+    "alt": "Picture aedile Boards",
+    "title": "Boards",
+    "description": "Keep track of your team's progress, organize your workflows and fund your projects, all in one place."
+  }
+]
