@@ -61,7 +61,7 @@
     <div class="try">
         <a class="btn" href="https://vqdn4-miaaa-aaaaf-qaawa-cai.ic0.app/login" target="_blank"
            rel="noopener noreferrer">
-            <span class="ht hm">Try the</span> beta
+            <span><span class="ht hm">Try the</span> beta</span>
             <img width="12" height="16" loading="lazy" alt="Try beta" class="icon" src="/images/arrow-try-beta-icon.svg"/>
         </a>
 

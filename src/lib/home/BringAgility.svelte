@@ -1,11 +1,12 @@
 <section>
     <div class="container">
-        <h2 class="ht hm">
-            Bring agility, and a DAO twist, to<br/> the way you manage your projects !
-        </h2>
-
-        <h2 class="hd">
+        <h2>
+            <span class="ht hm">
+                Bring agility, and a DAO twist, <br/>to the way you manage your projects !
+            </span>
+            <span class="hd">
             Bring agility, and a DAO twist, to the way you manage your projects !
+            </span>
         </h2>
 
         <div class="infos">
@@ -48,7 +49,7 @@
   }
 
   h2 {
-    max-width: 831rem;
+    max-width: 885rem;
     color: $neutral2;
 
     @media (max-width: $tabletMax) {

@@ -20,7 +20,7 @@
                 <a class="btn-gradient secondary" href="https://github.com/aedile-ic" target="_blank" rel="noopener noreferrer">
                     <img width="24" height="24" loading="lazy" alt="Try beta" class="icon" src="/images/github.svg"/>
                 </a>
-                <a class="btn-gradient secondary" href="https://medium.com/@esensconsulting" target="_blank" rel="noopener noreferrer">
+                <a class="btn-gradient secondary" href="https://medium.com/@aedile-icp" target="_blank" rel="noopener noreferrer">
                     <img width="24" height="24" loading="lazy" alt="Try beta" class="icon" src="/images/medium.svg"/>
                 </a>
             </div>

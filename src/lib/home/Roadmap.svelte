@@ -26,6 +26,8 @@
                 </div>
                 <div class="objectifs">
                     <p>UX rework of the application</p>
+                    <p>Rebranding aedile design</p>
+                    <p>New aedile website launch</p>
                 </div>
             </div>
             <div class="divider"></div>
@@ -35,9 +37,9 @@
                     <h3>Q3 2023</h3>
                 </div>
                 <div class="objectifs">
-                    <p>Public Projects</p>
-                    <p>Presentation of the Projects</p>
-                    <p>Public Dashboards</p>
+                    <p>Public projects</p>
+                    <p>Presentation of the projects</p>
+                    <p>Public dashboards</p>
                 </div>
             </div>
             <div class="divider"></div>

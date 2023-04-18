@@ -10,13 +10,18 @@
     let currentPage = 0;
 
     async function fetchData() {
-        const response = await fetch('carrousel.json');
+        const response = await fetch('carrousel.json?v=1.0');
         datas = await response.json();
     }
 
     onMount(async () => {
         await fetchData();
         let section = document.getElementById("carrousel");
+
+        section.addEventListener('wheel', (event) => {
+            currentX = event.deltaY;
+            handleNavigation();
+        }, { passive: false });
 
         section.addEventListener("mousedown", (event) => startX = event.pageX);
 
@@ -76,7 +81,11 @@
         <div class="elts" id="elts">
             {#each datas as data, i}
                 <div class="elt {i === currentPageElt ? 'current-elt' : ''}" on:click={() => handleClick(i)}>
-                    <img width="1191.11" height="700" loading="lazy" src="{data.src}" alt="{data.alt}"/>
+                    <picture>
+                        <source srcset="{data.srcWebp}" type="image/webp">
+                        <source srcset="{data.src}" type="image/jpg">
+                        <img width="1191.11" height="700" src="{data.srcWebp}" class="home-bg-right" alt="{data.alt}" loading="lazy">
+                    </picture>
                 </div>
             {/each}
         </div>

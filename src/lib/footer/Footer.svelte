@@ -10,7 +10,7 @@
            target="_blank" rel="noopener noreferrer">
             <img alt="Try beta" width="24" height="24" loading="lazy" class="icon" src="/images/github.svg"/>
         </a>
-        <a class="medium" href="https://medium.com/@esensconsulting"
+        <a class="medium" href="https://medium.com/@aedile-icp"
            target="_blank" rel="noopener noreferrer">
             <img alt="Try beta" width="24" height="24" loading="lazy" class="icon" src="/images/medium.svg"/>
         </a>

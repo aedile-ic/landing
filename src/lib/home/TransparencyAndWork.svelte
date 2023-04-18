@@ -68,7 +68,7 @@
   .container {
     display: flex;
     justify-content: space-between;
-    margin-top: 32rem;
+    margin-top: 44rem;
 
     @media (max-width: $tabletMax) {
       flex-direction: column;
@@ -82,6 +82,7 @@
     font-size: 48rem;
     line-height: 52rem;
     color: #D8D5FB;
+    margin-bottom: 44rem;
 
     @media (max-width: $tabletMax) {
       font-size: 32rem;

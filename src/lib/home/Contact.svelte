@@ -24,7 +24,7 @@
                         <img width="24" height="24" loading="lazy" alt="Try beta" class="icon" src="/images/github.svg"/>
                     </a>
                     <a class="btn-gradient secondary" data-text="Medium"
-                       href="https://medium.com/@esensconsulting"
+                       href="https://medium.com/@aedile-icp"
                        target="_blank" rel="noopener noreferrer">
                         <img width="24" height="24" loading="lazy" alt="Try beta" class="icon" src="/images/medium.svg"/>
                     </a>
@@ -182,7 +182,7 @@
   }
 
   .contact {
-    margin-top: 188rem;
+    margin-top: 150rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -192,7 +192,7 @@
 
 
     @media (max-width: $tabletMax) {
-      margin-top: 142rem;
+      margin-top: 100rem;
     }
 
     h4 {

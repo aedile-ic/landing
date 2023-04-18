@@ -1,20 +1,23 @@
 [
   {
-    "src": "/images/carrousel/carrousel-1.png",
-    "alt": "First picture carrousel",
-    "title": "Cards",
-    "description": "Organize your workflows and fund your projects."
+    "srcWebp": "/images/carrousel/aedille-screen-1.webp",
+    "src": "/images/carrousel/aedille-screen-1.jpg",
+    "alt": "Picture aedile columns",
+    "title": "Columns",
+    "description": "Customize the way you build, visualize and monitor your projects."
   },
   {
-    "src": "/images/carrousel/carrousel-2.png",
-    "alt": "Second picture carrousel",
+    "srcWebp": "/images/carrousel/aedille-screen-2.webp",
+    "src": "/images/carrousel/aedille-screen-2.jpg",
+    "alt": "Picture aedile cards",
     "title": "Cards",
-    "description": "Organize your workflows and fund your projects."
+    "description": "Share and manage your tasks and ideas with advanced tailored features."
   },
   {
-    "src": "/images/carrousel/carrousel-3.png",
-    "alt": "third picture carrousel",
-    "title": "Cards",
-    "description": "Organize your workflows and fund your projects. Organize your workflows and fund your projects. Organize your workflows and fund your projects. Organize your workflows and fund your projects."
+    "srcWebp": "/images/carrousel/aedille-screen-3.webp",
+    "src": "/images/carrousel/aedille-screen-3.jpg",
+    "alt": "Picture aedile Boards",
+    "title": "Boards",
+    "description": "Keep track of your team's progress, organize your workflows and fund your projects, all in one place."
   }
 ]

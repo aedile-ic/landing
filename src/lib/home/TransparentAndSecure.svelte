@@ -3,9 +3,16 @@
     <img width="390" height="2204" loading="lazy" src="/images/home/bg-star-mobile.png" class="bg-star ht hd" alt="background star">
     <img width="1440" height="1171" loading="lazy" src="/images/home/bg-star-2.png" class="bg-star2" alt="background star">
     <div class="info" id="concept">
-        <img width="246" height="247" loading="lazy" src="/images/home/aedile-charater.svg" class="aedile-character" alt="Aedile charater">
-        <h3 class="ht hm">Transparent and Secure,<br/> Built on the Internet Computer</h3>
-        <h3 class="hd">Transparent and Secure, Built on the Internet Computer</h3>
+        <img width="246" height="247" loading="lazy" src="/images/home/aedile-charater.svg" class="aedile-character"
+             alt="Aedile charater">
+        <h3>
+            <span class="ht hm">
+                Transparent and Secure,<br/> Built on the Internet Computer
+            </span>
+            <span class="hd">
+            Transparent and Secure, Built on the Internet Computer
+            </span>
+        </h3>
         <p>aedile is built on the first true World Computer, DFINITY's Internet Computer, a Proof-of-Useful-Work (PoUW)
             blockchain that runs under the control of an advanced DAO to completely automate and decentralize processes
             such as protocol upgrades.</p>
@@ -43,17 +50,17 @@
                 </p>
             </div>
             <div class="column">
-                <img width="151" height="128" loading="lazy" src="/images/home/group-3.png" alt="Group 3"/>
-                <h4>Cost-effective</h4>
-                <p>
-                    Save money by storing your data in ICP smart contracts.
-                </p>
-            </div>
-            <div class="column">
                 <img width="151" height="127" loading="lazy" src="/images/home/group-4.png" alt="Group 4"/>
                 <h4>Open</h4>
                 <p>
                     Share in our vision of an open source world and help build it !
+                </p>
+            </div>
+            <div class="column">
+                <img width="151" height="128" loading="lazy" src="/images/home/group-3.png" alt="Group 3"/>
+                <h4>Cost-effective</h4>
+                <p>
+                    Save money by storing your data in ICP smart contracts.
                 </p>
             </div>
         </div>
@@ -133,7 +140,7 @@
     h3 {
       color: $neutral2;
       margin-top: 32rem;
-      margin-bottom: 16rem;
+      margin-bottom: 60rem;
 
       @media (max-width: $tabletMax) {
         margin-top: 16rem;
